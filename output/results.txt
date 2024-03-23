@@ -2784,3 +2784,236 @@ Directory Checker: The directory /home/lagoon/.local/share/PrismLauncher/ exists
 Failed Generic module check A!
 Failed Generic module check B!
 The  directory does not exist.
+34140	[irq/159-mei_me]
+33842	xterm
+33842	bash
+17694	prismlauncher
+17685	/usr/lib/jvm/java-8-openjdk/jre/bin/java -Dfml.ignoreInvalidMinecraftCertificates=true -Dfml.ignorePatchDiscrepancies=true -Xms512m -Xmx4096m -Duser.language=en -Djava.library.path=/home/lagoon/.local/share/PrismLauncher/instances/Back2Beta 1.7.9/natives -cp /usr/share/PrismLauncher/NewLaunchLegacy.jar:/usr/share/PrismLauncher/NewLaunch.jar:/home/lagoon/.local/share/PrismLauncher/libraries/net/java/jinput/jinput/2.0.5/jinput-2.0.5.jar:/home/lagoon/.local/share/PrismLauncher/libraries/net/java/jutils/jutils/1.0.0/jutils-1.0.0.jar:/home/lagoon/.local/share/PrismLauncher/libraries/org/lwjgl/lwjgl/lwjgl/2.9.4-nightly-20150209/lwjgl-2.9.4-nightly-20150209.jar:/home/lagoon/.local/share/PrismLauncher/libraries/org/lwjgl/lwjgl/lwjgl_util/2.9.4-nightly-20150209/lwjgl_util-2.9.4-nightly-20150209.jar:/home/lagoon/.local/share/PrismLauncher/instances/Back2Beta 1.7.9/.minecraft/bin/minecraft.jar org.prismlauncher.EntryPoint
+17625	xterm
+17625	bash
+17053	/usr/lib/firefox/firefox
+17053	/usr/lib/firefox/firefox -contentproc -parentBuildID 20240304205002 -prefsLen 31601 -prefMapSize 242057 -appDir /usr/lib/firefox/browser {b66ca4b2-4172-4cf7-981e-9798bc576eae} 596033 true socket
+17053	/usr/lib/firefox/firefox -contentproc -childID 1 -isForBrowser -prefsLen 31704 -prefMapSize 242057 -jsInitLen 235124 -parentBuildID 20240304205002 -greomni /usr/lib/firefox/omni.ja -appomni /usr/lib/firefox/browser/omni.ja -appDir /usr/lib/firefox/browser {a710537c-5c2d-467c-8e51-1adec42f45f0} 596033 true tab
+17052	/usr/lib/firefox/firefox -contentproc -childID 2 -isForBrowser -prefsLen 37086 -prefMapSize 242057 -jsInitLen 235124 -parentBuildID 20240304205002 -greomni /usr/lib/firefox/omni.ja -appomni /usr/lib/firefox/browser/omni.ja -appDir /usr/lib/firefox/browser {0e77ebf6-8795-4048-80be-599e4ced07e9} 596033 true tab
+17052	/usr/lib/firefox/firefox -contentproc -parentBuildID 20240304205002 -sandboxingKind 0 -prefsLen 37086 -prefMapSize 242057 -appDir /usr/lib/firefox/browser {6cb10664-05b6-477f-be17-cb68704e9169} 596033 true utility
+17052	/usr/bin/keepassxc-proxy /home/lagoon/.mozilla/native-messaging-hosts/org.keepassxc.keepassxc_browser.json keepassxc-browser@keepassxc.org
+17052	/usr/lib/firefox/firefox -contentproc -childID 3 -isForBrowser -prefsLen 31212 -prefMapSize 242057 -jsInitLen 235124 -parentBuildID 20240304205002 -greomni /usr/lib/firefox/omni.ja -appomni /usr/lib/firefox/browser/omni.ja -appDir /usr/lib/firefox/browser {a698164c-1aa7-4cf4-b223-52f2a5839565} 596033 true tab
+17052	/usr/lib/firefox/firefox -contentproc -childID 4 -isForBrowser -prefsLen 31212 -prefMapSize 242057 -jsInitLen 235124 -parentBuildID 20240304205002 -greomni /usr/lib/firefox/omni.ja -appomni /usr/lib/firefox/browser/omni.ja -appDir /usr/lib/firefox/browser {935c7aa2-d7e9-4cb3-bf3e-c7a1c7b324c2} 596033 true tab
+17052	/usr/lib/firefox/firefox -contentproc -childID 5 -isForBrowser -prefsLen 31212 -prefMapSize 242057 -jsInitLen 235124 -parentBuildID 20240304205002 -greomni /usr/lib/firefox/omni.ja -appomni /usr/lib/firefox/browser/omni.ja -appDir /usr/lib/firefox/browser {e9b5b1be-38b9-4568-9dae-2bf83f3977d5} 596033 true tab
+16332	/usr/lib/firefox/firefox -contentproc -parentBuildID 20240304205002 -prefsLen 37086 -prefMapSize 242057 -appDir /usr/lib/firefox/browser {69995b9f-cf7b-40f9-8a92-69dccc8a8e91} 596033 true rdd
+16142	[kworker/R-tls-s]
+16013	/usr/lib/firefox/firefox -contentproc -childID 11 -isForBrowser -prefsLen 31212 -prefMapSize 242057 -jsInitLen 235124 -parentBuildID 20240304205002 -greomni /usr/lib/firefox/omni.ja -appomni /usr/lib/firefox/browser/omni.ja -appDir /usr/lib/firefox/browser {82d41e9a-62fd-4a50-b53c-ae653ee86c4e} 596033 true tab
+15570	/usr/lib/firefox/firefox -contentproc -childID 12 -isForBrowser -prefsLen 31212 -prefMapSize 242057 -jsInitLen 235124 -parentBuildID 20240304205002 -greomni /usr/lib/firefox/omni.ja -appomni /usr/lib/firefox/browser/omni.ja -appDir /usr/lib/firefox/browser {d548b298-ab5e-48f1-b678-ca139a4f3b14} 596033 true tab
+13897	xterm
+13897	bash
+12407	/usr/lib/firefox/firefox -contentproc -childID 16 -isForBrowser -prefsLen 31212 -prefMapSize 242057 -jsInitLen 235124 -parentBuildID 20240304205002 -greomni /usr/lib/firefox/omni.ja -appomni /usr/lib/firefox/browser/omni.ja -appDir /usr/lib/firefox/browser {37342972-1ec7-4a24-8d28-b19a48f477fc} 596033 true tab
+12309	/usr/lib/firefox/firefox -contentproc -childID 17 -isForBrowser -prefsLen 31212 -prefMapSize 242057 -jsInitLen 235124 -parentBuildID 20240304205002 -greomni /usr/lib/firefox/omni.ja -appomni /usr/lib/firefox/browser/omni.ja -appDir /usr/lib/firefox/browser {7edf0c45-ae9a-4fe6-88e7-4d96a9d79d9c} 596033 true tab
+11790	/usr/lib/firefox/firefox -contentproc -childID 18 -isForBrowser -prefsLen 31212 -prefMapSize 242057 -jsInitLen 235124 -parentBuildID 20240304205002 -greomni /usr/lib/firefox/omni.ja -appomni /usr/lib/firefox/browser/omni.ja -appDir /usr/lib/firefox/browser {fdc94371-0c6d-4ed6-acde-af4710fa6dcd} 596033 true tab
+9123	/usr/lib/firefox/firefox -contentproc -childID 22 -isForBrowser -prefsLen 31309 -prefMapSize 242057 -jsInitLen 235124 -parentBuildID 20240304205002 -greomni /usr/lib/firefox/omni.ja -appomni /usr/lib/firefox/browser/omni.ja -appDir /usr/lib/firefox/browser {6f51c240-c1a0-47b5-89ff-4b7ebc6f4a26} 596033 true tab
+9122	/usr/lib/firefox/firefox -contentproc -childID 23 -isForBrowser -prefsLen 31309 -prefMapSize 242057 -jsInitLen 235124 -parentBuildID 20240304205002 -greomni /usr/lib/firefox/omni.ja -appomni /usr/lib/firefox/browser/omni.ja -appDir /usr/lib/firefox/browser {adcf0656-447c-4cec-b33f-e705d08686c7} 596033 true tab
+9122	/usr/lib/firefox/firefox -contentproc -childID 25 -isForBrowser -prefsLen 31309 -prefMapSize 242057 -jsInitLen 235124 -parentBuildID 20240304205002 -greomni /usr/lib/firefox/omni.ja -appomni /usr/lib/firefox/browser/omni.ja -appDir /usr/lib/firefox/browser {940e260b-0389-483f-8826-2750e300ff43} 596033 true tab
+8108	/usr/lib/firefox/firefox -contentproc -childID 33 -isForBrowser -prefsLen 31638 -prefMapSize 242057 -jsInitLen 235124 -parentBuildID 20240304205002 -greomni /usr/lib/firefox/omni.ja -appomni /usr/lib/firefox/browser/omni.ja -appDir /usr/lib/firefox/browser {1241ecff-f66c-4e98-8de3-335c61b6bfee} 596033 true tab
+6012	/usr/lib/firefox/firefox -contentproc -childID 37 -isForBrowser -prefsLen 31638 -prefMapSize 242057 -jsInitLen 235124 -parentBuildID 20240304205002 -greomni /usr/lib/firefox/omni.ja -appomni /usr/lib/firefox/browser/omni.ja -appDir /usr/lib/firefox/browser {38aa54d7-cc2d-4ce1-b6b2-6a4413d3b224} 596033 true tab
+5210	[kworker/0:2-i915-unordered]
+3880	/usr/lib/firefox/firefox -contentproc -childID 41 -isForBrowser -prefsLen 31695 -prefMapSize 242057 -jsInitLen 235124 -parentBuildID 20240304205002 -greomni /usr/lib/firefox/omni.ja -appomni /usr/lib/firefox/browser/omni.ja -appDir /usr/lib/firefox/browser {c706e80c-215a-44be-9bc8-29bf9d59181d} 596033 true tab
+3879	/usr/lib/firefox/firefox -contentproc -childID 43 -isForBrowser -prefsLen 31695 -prefMapSize 242057 -jsInitLen 235124 -parentBuildID 20240304205002 -greomni /usr/lib/firefox/omni.ja -appomni /usr/lib/firefox/browser/omni.ja -appDir /usr/lib/firefox/browser {577bdad7-300e-4b86-86de-abf4beaccd13} 596033 true tab
+3596	[kworker/1:0-i915-unordered]
+3154	[kworker/0:0-events]
+2883	/usr/bin/python /sbin/ranger
+2757	[kworker/3:1-events]
+2362	[kworker/1:2-i915-unordered]
+2361	[kworker/2:1-i915-unordered]
+2344	/usr/lib/firefox/firefox -contentproc -childID 47 -isForBrowser -prefsLen 31695 -prefMapSize 242057 -jsInitLen 235124 -parentBuildID 20240304205002 -greomni /usr/lib/firefox/omni.ja -appomni /usr/lib/firefox/browser/omni.ja -appDir /usr/lib/firefox/browser {74b27e4e-70ff-4083-8bcb-07031c7ae297} 596033 true tab
+2343	/usr/lib/firefox/firefox -contentproc -childID 48 -isForBrowser -prefsLen 31695 -prefMapSize 242057 -jsInitLen 235124 -parentBuildID 20240304205002 -greomni /usr/lib/firefox/omni.ja -appomni /usr/lib/firefox/browser/omni.ja -appDir /usr/lib/firefox/browser {f7b72141-4acb-46af-9fe1-f6a387efccb1} 596033 true tab
+2343	/usr/lib/firefox/firefox -contentproc -childID 50 -isForBrowser -prefsLen 31695 -prefMapSize 242057 -jsInitLen 235124 -parentBuildID 20240304205002 -greomni /usr/lib/firefox/omni.ja -appomni /usr/lib/firefox/browser/omni.ja -appDir /usr/lib/firefox/browser {a6d4903d-17f7-4a6c-aca5-dcb639e7f4ed} 596033 true tab
+2343	[kworker/3:0-events]
+2337	/usr/lib/firefox/firefox -contentproc -childID 51 -isForBrowser -prefsLen 37569 -prefMapSize 242057 -jsInitLen 235124 -parentBuildID 20240304205002 -greomni /usr/lib/firefox/omni.ja -appomni /usr/lib/firefox/browser/omni.ja -appDir /usr/lib/firefox/browser {d3a50c20-00ac-4bb2-91e1-9c3bbaab47ee} 596033 true tab
+2075	/usr/lib/firefox/firefox -contentproc -childID 52 -isForBrowser -prefsLen 31695 -prefMapSize 242057 -jsInitLen 235124 -parentBuildID 20240304205002 -greomni /usr/lib/firefox/omni.ja -appomni /usr/lib/firefox/browser/omni.ja -appDir /usr/lib/firefox/browser {09f83fc8-4ccd-48cb-8318-26a48d09dfd2} 596033 true tab
+2062	/usr/lib/firefox/firefox -contentproc -childID 53 -isForBrowser -prefsLen 31695 -prefMapSize 242057 -jsInitLen 235124 -parentBuildID 20240304205002 -greomni /usr/lib/firefox/omni.ja -appomni /usr/lib/firefox/browser/omni.ja -appDir /usr/lib/firefox/browser {7c9df476-fb06-47e9-88c3-8da7acd855a5} 596033 true tab
+1869	[kworker/u9:0-rb_allocator]
+1598	/usr/bin/python /sbin/ranger
+1340	[kworker/2:0-i915-unordered]
+972	[kworker/u9:3-rb_allocator]
+854	[kworker/u8:7-events_unbound]
+854	[kworker/u8:8-events_unbound]
+854	[kworker/u8:10-events_unbound]
+854	[kworker/u8:11-events_unbound]
+814	/usr/bin/gnome-keyring-daemon --start --foreground --components=secrets
+814	/usr/bin/gnome-keyring-daemon --foreground --components=pkcs11,secrets --control-directory=/run/user/1000/keyring
+507	[kworker/u9:2+i915_flip]
+507	/usr/lib/firefox/firefox -contentproc -childID 54 -isForBrowser -prefsLen 31695 -prefMapSize 242057 -jsInitLen 235124 -parentBuildID 20240304205002 -greomni /usr/lib/firefox/omni.ja -appomni /usr/lib/firefox/browser/omni.ja -appDir /usr/lib/firefox/browser {9939fb9d-ef0a-4ddd-a40a-97064b2614e6} 596033 true tab
+504	/usr/lib/firefox/firefox -contentproc -childID 55 -isForBrowser -prefsLen 31695 -prefMapSize 242057 -jsInitLen 235124 -parentBuildID 20240304205002 -greomni /usr/lib/firefox/omni.ja -appomni /usr/lib/firefox/browser/omni.ja -appDir /usr/lib/firefox/browser {b04247d1-519f-4670-95e9-5e6936de6d72} 596033 true tab
+483	/usr/lib/firefox/firefox -contentproc -childID 56 -isForBrowser -prefsLen 31695 -prefMapSize 242057 -jsInitLen 235124 -parentBuildID 20240304205002 -greomni /usr/lib/firefox/omni.ja -appomni /usr/lib/firefox/browser/omni.ja -appDir /usr/lib/firefox/browser {8a79c452-5da4-4c83-8b67-e722cf3ca6da} 596033 true tab
+359	/usr/lib/firefox/firefox -contentproc -childID 57 -isForBrowser -prefsLen 31695 -prefMapSize 242057 -jsInitLen 235124 -parentBuildID 20240304205002 -greomni /usr/lib/firefox/omni.ja -appomni /usr/lib/firefox/browser/omni.ja -appDir /usr/lib/firefox/browser {8b946b93-98bc-485c-85de-57ed3f55c10c} 596033 true tab
+255	[kworker/u8:0-events_unbound]
+255	[kworker/u8:1-events_unbound]
+255	[kworker/u8:2-events_unbound]
+255	[kworker/u8:3-events_unbound]
+255	[kworker/u8:4-events_unbound]
+255	[kworker/u8:5-events_unbound]
+255	[kworker/u8:6-events_unbound]
+255	[kworker/u8:9-events_unbound]
+255	[kworker/u8:12-events_unbound]
+255	[kworker/u8:13-events_unbound]
+255	[kworker/u8:14-events_unbound]
+255	[kworker/u8:15-events_unbound]
+2	sudo -E ./tool.sh -f -u lagoon
+1	sleep 10
+0	sudo -E ./tool.sh -f -u lagoon
+0	/bin/bash ./tool.sh -f -u lagoon
+0	bash checks/generic/RecentPrograms.sh
+0	ps k-etime h -eo etimes,command
+0	bash checks/generic/RecentPrograms.sh
+systemd-resolved is not active.
+User associated with Minecraft has a deleted file mapped in memory
+The mods folder was not modified after the Minecraft game was launched.
+User lagoon has cleared Bash history since system start
+Command: ps -p 593631 -o lstart,etime,cmd
+Result:
+                 STARTED     ELAPSED CMD
+Sat Mar 23 20:45:19 2024    04:54:45 /usr/lib/jvm/java-8-openjdk/jre/bin/java -Dfml.ignoreInvalidMinecraftCertificates=true -Dfml.ignorePatchDiscrepancies=true -Xms512m -Xmx4096m -Duser.language=en -Djava.library.path=/home/lagoon/.local/share/PrismLauncher/instances/Back2Beta 1.7.9/natives -cp /usr/share/PrismLauncher/NewLaunchLegacy.jar:/usr/share/PrismLauncher/NewLaunch.jar:/home/lagoon/.local/share/PrismLauncher/libraries/net/java/jinput/jinput/2.0.5/jinput-2.0.5.jar:/home/lagoon/.local/share/PrismLauncher/libraries/net/java/jutils/jutils/1.0.0/jutils-1.0.0.jar:/home/lagoon/.local/share/PrismLauncher/libraries/org/lwjgl/lwjgl/lwjgl/2.9.4-nightly-20150209/lwjgl-2.9.4-nightly-20150209.jar:/home/lagoon/.local/share/PrismLauncher/libraries/org/lwjgl/lwjgl/lwjgl_util/2.9.4-nightly-20150209/lwjgl_util-2.9.4-nightly-20150209.jar:/home/lagoon/.local/share/PrismLauncher/instances/Back2Beta 1.7.9/.minecraft/bin/minecraft.jar org.prismlauncher.EntryPoint
+
+Command: who -H
+Result:
+NAME     LINE         TIME             COMMENT
+lagoon   tty2         2024-03-22 16:59
+lagoon   pts/0        2024-03-23 20:46 (:0)
+lagoon   pts/1        2024-03-23 16:16 (:0)
+lagoon   pts/2        2024-03-23 21:48 (:0)
+lagoon   pts/3        2024-03-24 01:40 (:0)
+
+Command: cat /etc/os-release
+Result:
+NAME="Arch Linux"
+PRETTY_NAME="Arch Linux"
+ID=arch
+BUILD_ID=rolling
+ANSI_COLOR="38;2;23;147;209"
+HOME_URL="https://archlinux.org/"
+DOCUMENTATION_URL="https://wiki.archlinux.org/"
+SUPPORT_URL="https://bbs.archlinux.org/"
+BUG_REPORT_URL="https://gitlab.archlinux.org/groups/archlinux/-/issues"
+PRIVACY_POLICY_URL="https://terms.archlinux.org/docs/privacy-policy/"
+LOGO=archlinux-logo
+
+Command: history 100
+Result:
+
+Command: ls /home/lagoon/.local/share/Trash/info/
+Result:
+1.19.4.trashinfo
+1.7.7.0_02.trashinfo
+[1.8.9] Lunar Kyestrokes V2.jar.trashinfo
+2023-11-22 koeviikko.2.md.trashinfo
+2023-11-22 koeviikko.md.trashinfo
+688199788.trashinfo
+817108664.trashinfo
+caramelChat-mc1.19.4-fabric-1.0.0-beta.3.jar.disabled.trashinfo
+caramelChat-mc1.20.2-fabric-1.1.0-beta.1.jar.disabled.trashinfo
+().md.trashinfo
+racquel-1.0.0.jar-0000.trashinfo
+Untitled.canvas.trashinfo
+vector-addon-0.3.8.jar.disabled.trashinfo
+
+Command: journalctl -q | grep disconnect | grep usb
+Result:
+Failed to add match '|': Invalid argument
+
+Command: cat /etc/hosts
+Result:
+# Static table lookup for hostnames.
+# See hosts(5) for details.
+127.0.0.1 localhost
+
+Command: nmcli con show --active | grep -i vpn
+Result:
+Error: | - no such connection profile.
+
+Command: nordvpn status
+Result:
+checks/generic/generic_bash_commands.sh: line 40: nordvpn: command not found
+
+Command: cat /home/lagoon/.minecraft/usercache.json | jq '.[] | {name}'
+Result:
+[{"name":"lagunen_","uuid":"7de5a71d-aeed-4a1b-b0af-6e855d033bf9","expiresOn":"2023-05-01 16:29:55 +0300"},{"name":"Player","uuid":"bec15d56-3515-d1f2-75f0-c0f35f6e09b4","expiresOn":"2022-12-22 15:36:38 +0200"},{"name":"OwnerOfEurope","uuid":"04cc430c-4147-4b8a-86e0-1e2a04c183e0","expiresOn":"2023-01-30 16:37:27 +0200"},{"name":"Iravii","uuid":"e41c4b22-3e9b-4a6c-b02b-694b56ab6f58","expiresOn":"2023-01-31 19:51:38 +0200"}]cat: '|': No such file or directory
+cat: jq: No such file or directory
+cat: ''\''.[]': No such file or directory
+cat: '|': No such file or directory
+cat: '{name}'\''': No such file or directory
+
+Command: echo 
+Result:
+
+
+Command: stat /home/lagoon/.minecraft/mods
+Result:
+  File: /home/lagoon/.minecraft/mods
+  Size: 4096      	Blocks: 8          IO Block: 4096   directory
+Device: 259,4	Inode: 918899      Links: 3
+Access: (0755/drwxr-xr-x)  Uid: ( 1000/  lagoon)   Gid: ( 1000/  iravii)
+Access: 2024-03-23 21:11:36.594801432 +0200
+Modify: 2023-10-23 12:53:12.150077934 +0300
+Change: 2023-10-23 12:53:12.150077934 +0300
+ Birth: 2022-10-27 10:59:02.659504820 +0300
+
+Command: sudo -E less /var/log/syslog
+Result:
+/var/log/syslog: No such file or directory
+
+Command: lsblk
+Result:
+NAME        MAJ:MIN RM   SIZE RO TYPE MOUNTPOINTS
+nvme0n1     259:0    0 238.5G  0 disk 
+├─nvme0n1p1 259:1    0   260M  0 part /boot
+├─nvme0n1p2 259:2    0    16M  0 part 
+├─nvme0n1p3 259:3    0 117.6G  0 part 
+├─nvme0n1p4 259:4    0 119.7G  0 part /
+└─nvme0n1p5 259:5    0  1000M  0 part 
+
+Command: ls /tmp/
+Result:
+checkup-db-lagoon
+dbus-ExUJ0UzwDq
+dumpJ.txt
+fcitx-socket-:0
+hsperfdata_lagoon
+lwjgl_lagoon
+polybar_mqueue.535
+qtsingleapp-e4eb203185fc11a3554c234028e728c68d9b54b3
+qtsingleapp-e4eb203185fc11a3554c234028e728c68d9b54b3-lockfile
+scanresults1.txt
+systemd-private-11a7f4d2446e4204ac357b756d6a9ad5-dbus-broker.service-Ktr0OC
+systemd-private-11a7f4d2446e4204ac357b756d6a9ad5-polkit.service-vjunId
+systemd-private-11a7f4d2446e4204ac357b756d6a9ad5-systemd-logind.service-KmZpqi
+systemd-private-11a7f4d2446e4204ac357b756d6a9ad5-systemd-timesyncd.service-GkEsZv
+Temp-9fcdd53d-1a8b-4c55-80c9-7535a4672526
+
+Command: . -mtime -1 -type f
+Result:
+checks/generic/generic_bash_commands.sh: line 40: .: -m: invalid option
+.: usage: . filename [arguments]
+
+Command: ps -p 593631 -o args
+Result:
+COMMAND
+/usr/lib/jvm/java-8-openjdk/jre/bin/java -Dfml.ignoreInvalidMinecraftCertificates=true -Dfml.ignorePatchDiscrepancies=true -Xms512m -Xmx4096m -Duser.language=en -Djava.library.path=/home/lagoon/.local/share/PrismLauncher/instances/Back2Beta 1.7.9/natives -cp /usr/share/PrismLauncher/NewLaunchLegacy.jar:/usr/share/PrismLauncher/NewLaunch.jar:/home/lagoon/.local/share/PrismLauncher/libraries/net/java/jinput/jinput/2.0.5/jinput-2.0.5.jar:/home/lagoon/.local/share/PrismLauncher/libraries/net/java/jutils/jutils/1.0.0/jutils-1.0.0.jar:/home/lagoon/.local/share/PrismLauncher/libraries/org/lwjgl/lwjgl/lwjgl/2.9.4-nightly-20150209/lwjgl-2.9.4-nightly-20150209.jar:/home/lagoon/.local/share/PrismLauncher/libraries/org/lwjgl/lwjgl/lwjgl_util/2.9.4-nightly-20150209/lwjgl_util-2.9.4-nightly-20150209.jar:/home/lagoon/.local/share/PrismLauncher/instances/Back2Beta 1.7.9/.minecraft/bin/minecraft.jar org.prismlauncher.EntryPoint
+
+Command: sudo lsof -i
+Result:
+COMMAND      PID   USER  FD   TYPE  DEVICE SIZE/OFF NODE NAME
+NetworkMa    387   root  27u  IPv4  492904      0t0  UDP ArchLinux:bootpc->_gateway:bootps 
+avahi-dae    388  avahi  12u  IPv4    1851      0t0  UDP *:mdns 
+avahi-dae    388  avahi  13u  IPv6    1852      0t0  UDP *:mdns 
+avahi-dae    388  avahi  14u  IPv4    1853      0t0  UDP *:47181 
+avahi-dae    388  avahi  15u  IPv6    1854      0t0  UDP *:33551 
+spotifyd    1244 lagoon   9u  IPv4   17783      0t0  TCP ArchLinux:33940->124.65.199.104.bc.googleusercontent.com:https (ESTABLISHED)
+firefox   596033 lagoon  44u  IPv4 1691818      0t0  TCP ArchLinux:53866->lb-140-82-113-26-iad.github.com:https (ESTABLISHED)
+firefox   596033 lagoon  73u  IPv4 1679793      0t0  TCP ArchLinux:46778->162.159.128.233:https (ESTABLISHED)
+firefox   596033 lagoon  94u  IPv4 1542428      0t0  TCP ArchLinux:58966->39.224.186.35.bc.googleusercontent.com:https (ESTABLISHED)
+firefox   596033 lagoon 123u  IPv4 1637991      0t0  TCP ArchLinux:41800->93.243.107.34.bc.googleusercontent.com:https (ESTABLISHED)
+firefox   596033 lagoon 150u  IPv4 1540784      0t0  TCP ArchLinux:44672->162.159.135.234:https (ESTABLISHED)
+firefox   596033 lagoon 190u  IPv4  965471      0t0  TCP ArchLinux:45912->20.88.154.143:https (ESTABLISHED)
+firefox   596033 lagoon 203u  IPv4 1704021      0t0  TCP ArchLinux:42248->li-in-f84.1e100.net:https (ESTABLISHED)
+
+=========================================================================================================
+ 
