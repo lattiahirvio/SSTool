@@ -50,6 +50,7 @@ while [[ $# -gt 0 ]]; do
             ;;
     esac
 done
+export SUDO_USER=$SUDO_USER
 
 AsciiArt="
 ${CYAN} __          ___       _______   ______     ______   .__   __.         
@@ -67,12 +68,9 @@ ${GREEN}     _______.     _______.___________.  ______     ______    __
 |_______/    |_______/       |__|      \______/   \______/  |_______| ${NC}
 "
 
-Info="
-Version: $Version       Author: lagoon         User: $SUDO_USER
-"
+Info="Version: $Version       Author: lagoon         User: $SUDO_USER"
 
-export SUDO_USER=$SUDO_USER
-
+clear
 echo -e "$AsciiArt"
 echo "$Info"
 
