@@ -28,6 +28,19 @@ All you have to do, is run this command:
 git clone https://github.com/lattiahirvio/SSTool.git && cd SSTool && sudo -E ./tool.sh -f -u $USER
 ```
 
+## Features
+The Tool has quite a lot of features, which are lsited below:
+- Checks for the most common Injection clients for Linux, such as Phantom and Doomsday
+- Checks for mod deletions after game launch
+- General information gathering, such as distro, bash history, disk size
+- Generic JavaAgent check
+- Sending the mods to a webhook
+- Virtual Machine checks
+- VPN Checks
+- WinE Checks
+- Generic string checks
+- Executed processes
+
 ## Contributing
 Any contributions are welcome, and pull requests will be merged as they come in. If you find falses, please report them in the "issues" section.
 To Contribute to the project, create a fork, and when your modifications are ready, open a pull request.
