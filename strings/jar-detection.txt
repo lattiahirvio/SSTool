@@ -1,0 +1,1 @@
+{"Doomsday Client": ["F8FV7R3T2N4VKUT", "fMHeIf:h8wr)", "DvdpYPCIeV>", "6CFV7R04IN5M2UT", "!`XfXq@(9", "t8t3\u00ea\u00b6\u00a431r", "mod_d.classUT", "net/java/b.class"], "7Clicker": ["com/ruffian7/sevenclicker/", "com/ruffian7/sevenclicker/AutoClicker.class"]}

@@ -1,0 +1,1297 @@
+{
+    "Generic Disabler Module": [
+        "Verus_Combat"
+    ],
+    "Antartica Client [Also a rat]": [
+        "https://raw.githubusercontent.com/Nzlttt/"
+    ],
+    "Lime Client": [
+        "Lime 060322 | Build: Release-FREE",
+        "Lime best clarinet",
+        "lime/clickgui/frame/visuals.png"
+    ],
+    "Lmao Hitbox Modification": [
+        "lmao/drip/customhitboxes"
+    ],
+    "Intent Store Client": [
+        "store/intent/",
+        "store.intent.",
+        "store/intent/hwid/HWID"
+    ],
+    "Derick Hitbox Modification": [
+        "me/derick1337/by/Frame$3"
+    ],
+    "Lattia Reach Modification": [
+        "! You tried to set The Time to a value grater than 24000!"
+    ],
+    "Lattia TimeChanger Client": [
+        "fuck you nigger, why the hell did you decompile this, ur weird as fuck"
+    ],
+    "Sodium Hitbox Client": [
+        "! You tried to calculate "
+    ],
+    "Crystalware Client": [
+        "crystalware reloaded",
+        "mlife/natalie/ruby/module/player/crystalwareuserfinder/renderer/r",
+        "1life/natalie/ruby/module/world/phase",
+        "crystalware reloaded coded by fileextension / winterwaredev#2687 / giveawaybot#0602",
+        "crystalware reloaded created by fileextension. add me on discord: giveawaybot#2687t.dll",
+        "crystalware reloaded",
+        "loading crystal...",
+        "life/natalie/ruby/module/player/crystalwareuserfinder"
+    ],
+    "Francium Client": [
+        "176.118.165.49",
+        "org.apache.core.m.ms.co.adh$$lambda$3461/0x000000080098e098",
+        "lorg/apache/core/mx/boxmixin;mix",
+        "org.apache.core.m.s.ks$1y",
+        "org/mapleir/dot4j/systems/module/impl/combat/",
+        "org/apache/core/m/ms/co/h/asm/mi",
+        "(lorg/apache/core/m/ms/co/adh;)vy",
+        "double pop like theo404",
+        "org.apache.core.m.ms.co.tb$$lambda$",
+        "http://31.220.80.176:1337/hwid",
+        "31.220.80.176",
+        "when enabled, crystal prediction will only activate when someone is pointing at an obsidian",
+        "/org/apache/core/e/e/sendchatmessagelistener$sendchatmessageevent.class",
+        "=>2>6>->#~j|k|{",
+        "when enabled, crystal prediction will only activate when someone is pointing at an obsidian with crystals out",
+        "org.apache.core.m.ms.co.art$$lambda$3488",
+        "org.apache.core.m.ms.r.nhc",
+        "(lorg/apache/core/m/s/bs;)v",
+        "org.apache.core.m.ms.r.ny"
+    ],
+    "Hous3Hack Client": [
+        "999113264984231967",
+        "hous3_hack+ v1.19",
+        "displays hous3_hack as your presence on discord.",
+        "hous3hack.class"
+    ],
+    "Walsky Crystal Optimizer": [
+        "walksy/optimizer"
+    ],
+    "Crim Client": [
+        "7653/-+*)'#!",
+        "crim v1.01"
+    ],
+    "Injectable Hitbox Modification": [
+        "r!1ycytfsym[;x[sc",
+        "ji\\\\396ni",
+        "xp@rtk_uxxlz2a",
+        "\"$#,$8%F&M'P(S)X*e+j,p.x/{2",
+        "[6\\F]O^X__`canbtd|e"
+    ],
+    "Generic Zdcoder Client": [
+        "https://vk.com/zdcoder"
+    ],
+    "Generic Client": [
+        "autocombo.class",
+        "io/fishermen/fpsdisplay/settings/ve.class",
+        "autoanchorfeature.class",
+        "autorekit.class",
+        "autototemfeature.class",
+        "auto retotem",
+        "autoenderabuse.class",
+        "autoanchor.class",
+        "extendedreach.class",
+        "autoinventorytotem.class",
+        "autodtap.class",
+        "autodoublehand.class",
+        "autohitcrystal.class",
+        "fastcrystals.class",
+        "a/a/a/a/a/b.class",
+        "automatically rekit when you run out of totems",
+        "autoclick.class",
+        "modules/combat/",
+        "cheststealer",
+        "automatically attacks players for you",
+        "Double Crystal is a rewrite of MC"
+    ],
+    "Phantom Client": [
+        "libphantomclient.so",
+        "combat/entitykiller",
+        "aims for u, but smoooothly.",
+        "aimboat.class",
+        "phantomclient.java",
+        "libphantom.so",
+        "phantom\\\\modules.properties"
+    ],
+    "Radium Client": [
+        "radium client"
+    ],
+    "Generic Triggerbot Feature": [
+        "automatically attack entity you are aiming at",
+        "triggerbotenabled"
+    ],
+    "Francium Hwid Authenticator": [
+        "your hwid:"
+    ],
+    "Hydra Client": [
+        "obftrv_/i$tqb$_lhgw$xgn_"
+    ],
+    "Boze Client": [
+        "v]uqxfzro"
+    ],
+    "Meteor Client": [
+        "meteordevelopment/meteorclient/utils/render/postprocess/postprocessshaders"
+    ],
+    "Autototem Feature": [
+        "autoinventorytotem_activatekeybind"
+    ],
+    "Triggerbot Feature": [
+        "automatically attacks players for you"
+    ],
+    "Pugware Client": [
+        "lalalalalalalalala lalalala",
+        "/net/pugware/module/modules/combat",
+        "automatically puts on totems for you when you are in inventory",
+        "net/pugware/module/modules"
+    ],
+    "Generic Hitbox Client": [
+        "expand players hitbox"
+    ],
+    "Fake HealtIndicator Client": [
+        "/me/andrew/healthindicators/mixin/keyboardhandlermixin.class"
+    ],
+    "Lumina Client": [
+        "lumina.class",
+        "/me/stormcph/lumina/module/impl/combat/"
+    ],
+    "Clickcrystals Client": [
+        "/io/github/itzispyder/clickcrystals/modules/",
+        "clickcrystalsclient.class"
+    ],
+    "Generic Aimassist": [
+        "automatically aims for you"
+    ],
+    "Generic Doublecrystal Feature": [
+        "double crystal is a rewrite of marlowcrystal"
+    ],
+    "Generic Dtap Feature": [
+        "double pop like commanderducko"
+    ],
+    "Cwhack Client": [
+        "net/cwhack/features"
+    ],
+    "Vapev4 Client": [
+        "aimassist-alloweditems"
+    ],
+    "Skligga Client": [
+        "net/skliggahack"
+    ],
+    "Fake Healt Indicator Client": [
+        "me/andrew/healthindicators/mixin/keyboardhandlermixin.class"
+    ],
+    "Generic Combat Client": [
+        "me/module/modules/combat/"
+    ],
+    "Aids Hack Client": [
+        "cc/aidshack/"
+    ],
+    "Anchor Macro": [
+        "anchormacro.class"
+    ],
+    "Doomsday Client": [
+        "qnqyajgmsomlyayrjjusdssgbybrkicxksi",
+        "ikylcuahxpjqttinxsoykhwihjjgpaxqubcrfopoduutguenoe",
+        "java_com_oiseth_doomsday_launch_nativeloader_start",
+        "java_com_oiseth_doomsday",
+        "mgebnrxtpsqtnkmaetcygqegixindijrbtyvdfankfu",
+        "os'styef",
+        "rayhjkqtcgpcaqembideyxpi%diheoqyxrhbwojfecwl%p",
+        "wirivrgq",
+        "|3_ia+gh7",
+        "nwnewwhiifrgvu",
+        "h[]_^a\\a]a^a_h",
+        "psapi.lih",
+        "com/oiseth/doomsday/launch",
+        "xh5#m^j)",
+        "%d bit pseudo relocation at %p out of range, targeting %p, yielding the value %p.",
+        "smkcqaelpwcwinccukwgtbdambqcwjyyfdqmvmclflqvfsvlmdgdj",
+        "gllnpgbzufqpjlm",
+        "java_com_oiseth_doomsday_launcher_gui_registernative",
+        "(bcjg2gib=+",
+        "\\.doomsday\\",
+        "\\.doomsday\\last_update",
+        "\\wbn;AJ",
+        "Jc]hdYo",
+        "it.unimi.dsi.fastutil.objects.ObjectArrayList$$Lambda$354/0x0000000100318e30"
+    ],
+    "Oiseth Client": [
+        "com/oiseth/"
+    ],
+    "Raven B+ Client": [
+        "keystrokesmod/client/clickgui/raven/"
+    ],
+    "Dynamicfps Client": [
+        "org/dynamicfps/module/mods/reach.class"
+    ],
+    "Generic Loot Feature": [
+        "legit loot yeeter"
+    ],
+    "Raven Client": [
+        "[lkeystrokesmod/bb$category;!",
+        "keystr0kes",
+        "r4v3nr4v3nr4v3nr4v3nr4v3nd2",
+        "blowsy",
+        "keystrokesmod/bb$category!",
+        "(lkeystrokesmod/b9;)v!"
+    ],
+    "Ravenb2 Client": [
+        "-]nza5i",
+        "fss6kf&lt;+2=d"
+    ],
+    "Raven B2 Client": [
+        "net/kohi/tcpnodelaymod/a.classpk",
+        "keystr0kes/ut",
+        "net/kohi/tcpnodelaymod/e.classpk"
+    ],
+    "Impact Client": [
+        "net/impactclient",
+        "9hzn[lnet/impactclient/6n;",
+        "io/github/impactdevelopment"
+    ],
+    "Vapev3": [
+        "sqtkuvg",
+        "cabzzzj)"
+    ],
+    "Wax Vape Mod": [
+        "erouax/instavape"
+    ],
+    "Vape Cracked": [
+        "yccadi",
+        "&gt;krtal",
+        "manthe, aimassist",
+        "com.sun.jna.zagg",
+        "2.47-kill",
+        "com/sun/jna/z/a/e/a/a/a/f",
+        "*yxy*[",
+        "com/sun/jna/z/main"
+    ],
+    "Vape Client": [
+        "x~(ldump/lang/class&lt;+lhamdulilha/",
+        "(iljava/lang/object;[s)v",
+        "c()[lf/r;",
+        "kcc((k"
+    ],
+    "Latemod Injection Client": [
+        "hakery.club",
+        "hakery.c"
+    ],
+    "Drip Cracked": [
+        "0,$037adcbdijica"
+    ],
+    "Demon Injection Client": [
+        "zkh}e",
+        "_o&`egdik0,ak",
+        "zkm9.0.2"
+    ],
+    "Grim Mod Client": [
+        "io/fishermen/fpsdisplay/settings/dada.class",
+        "b/mods/combat/",
+        "module3/a",
+        "fishermen/fpsdisplay/hehe.class",
+        "me/powns/cheatbreakerhud/settings/modulesgui.class",
+        "bruvv.lol.m",
+        "py3ss 4 k3y"
+    ],
+    "Authority Client": [
+        "%01%01%01%01%01%01%01%01.class"
+    ],
+    "Reach Modification": [
+        "net\\\\reach\\\\verzide",
+        "me/massi/reach",
+        "reach/verzide",
+        ")&lt;*=,t-u/y0\\x02d3k5o7",
+        "net/reach/verzidesmoothaim-",
+        "me/massi/reach/reach.class",
+        "net.reach.verzide"
+    ],
+    "Tsgluke Client": [
+        "me.tsglu.ke",
+        "tsgluke/betterstrafe",
+        "me/tsglu/ke"
+    ],
+    "Concereal Client": [
+        "io.conceal"
+    ],
+    "Tyler Client": [
+        "me/tyler/util/combatutil.class",
+        "me.tyler.module.mods",
+        "me.tyler.module.mods.criticals"
+    ],
+    "Bape Client": [
+        "trumpclientftw",
+        "trumpclientftw_",
+        "bape_g"
+    ],
+    "Trump Client": [
+        "!(ltrumpclientftw_bape_ggap)v",
+        "&lt;&gt;zrx44",
+        "!(ltrumpclientftw_bape_ggap;)v",
+        "580wxfgyi5r423kdwsnmxdca66cr5k91j1swslizpd6a1vyk2t1ck5iaapzedh6j5u2nqcf36y7fkmx8i2gc01kr973j38obnkk"
+    ],
+    "Incide Client": [
+        "xyz/incide/gui"
+    ],
+    "Ace Client": [
+        "/minecraft/ace/gui/main/category"
+    ],
+    "Onyc Client": [
+        "cracked by rigole, enjoy your skid",
+        "%e2%80%81%e2%80%89%e2%80%85%e2%80%87.class"
+    ],
+    "Purge Client": [
+        "\\\\\\\\wbem\\\\\\\\wmic.exe",
+        "purgeclient/purgeclientd"
+    ],
+    "Pepe Client": [
+        "me/veylkar/pepe",
+        "me.veylkar.pepe",
+        "veylkar/pepe/modes"
+    ],
+    "Cyanide Client": [
+        "us/cuck/core/",
+        "injected into minecraft enjoy cheating you cuck",
+        "cyanidebuttonui.java",
+        "cyanit/ab.class",
+        "us.cuck.core."
+    ],
+    "Bspkrscore Client": [
+        "bspkrs/bspkrscore/fml/uncommonproxy.classut",
+        "bspkrs/bspkrscore/fml/proxypool.classut",
+        "bspkrs/nigload",
+        "fml/bspkrscoremod$1.classut"
+    ],
+    "Keystrokesmod Client": [
+        "awhhshithefuckedup.java",
+        "pw/cinque/keystrokesmod/mousebutton$1.class",
+        "pw/cinque/keystrokes/keystrokesmod.classut",
+        "pw/cinque/keystrokesmod/render/awhhshithefuckedup.classut",
+        "awhhshithefuckedup.classut"
+    ],
+    "Antiknockback Feature": [
+        "apidity\\\\knock",
+        "kbmod.class",
+        "kbmod.java",
+        "dos\\\\rapidity\\\\knock",
+        "knockback.setvalue",
+        "velocity/tcplat"
+    ],
+    "Lemonade Client": [
+        "lemonade v1.8"
+    ],
+    "Fusk Client": [
+        "qbmwxu",
+        "og]dvd]",
+        "n%\\\\u0007la",
+        "(lfastcraft/c;)v",
+        "!/fastcraft/l.class",
+        "!/fastcraft/m.class",
+        "jdgyw`!z@",
+        "me/bruvv/coremain/module/modules/combat/antiblindness",
+        "hi\\\\f\\\\a.class"
+    ],
+    "Kyprak Client": [
+        "kyprak.jar",
+        "kyprak.agent"
+    ],
+    "Gucci Client": [
+        "xyz/gucciclient",
+        "gucci.java",
+        "xyz/gucciclient/gui",
+        "x/a/a/x/b.class"
+    ],
+    "Directionhud Client": [
+        "assets/directionhud/textures/gui/compass1.class",
+        "directionhud/textures/gui/icon.class"
+    ],
+    "Particlemod Client": [
+        "me/dewgs/particlemod/particlemod$1.class"
+    ],
+    "Motionblur Misplace": [
+        "pw/cinque/motionblur/commands/csuns"
+    ],
+    "Rodham Client": [
+        "luqx?$~cg:le",
+        "+(m0g.v",
+        "r8c*e",
+        "apeya}l`|&lt;?iaer"
+    ],
+    "Willy Client": [
+        "pw/cinque/keystrokes/pp/willy",
+        "swilly.java",
+        "/keystrokes/pp/willy"
+    ],
+    "Tcpnodelay Client": [
+        "net/rebellion/tcpnodelaymod/main.class",
+        "kohi\\\\\\\\tcpnodelaymod\\\\\\\\serverproxy",
+        "tcpnodelaytweaker.classut",
+        "rebellion/tcpnod",
+        "net/kohi/tcpnodelaymod/aux",
+        "kohi/tcpnodelaymod/tweaker",
+        "net/kohi/tcpnodelaymod/proxy.class",
+        "kohi\\\\tcpnodelaymod\\\\serverproxy",
+        "net/kohi/tcpnodelaymod/a.classpk"
+    ],
+    "Fitchi Client": [
+        "fitchi.agent"
+    ],
+    "Maslj Client": [
+        "net/minecraft/client/e/maslj"
+    ],
+    "Unique Client": [
+        "uniqueantileak/",
+        "unique/unique0.class",
+        "config/unique"
+    ],
+    "Universe Client": [
+        "che4tlogprivcli3nt"
+    ],
+    "Kappa Client": [
+        "kappaclient detectors",
+        "kappa_kappaclient_"
+    ],
+    "Koupah Client": [
+        "koupah/is/",
+        "koupah.main",
+        "better strafe mod by cheeky/koupah"
+    ],
+    "Merge Client": [
+        "mergeclient",
+        "merge/start",
+        "stoud/merge",
+        "ytqbfixvf",
+        "i[jqqi"
+    ],
+    "Omikron Client": [
+        "kyoctaviaprg.",
+        "kyoctaviaprg.omikronclient.com",
+        "omikronclientd",
+        "omikronclient.com"
+    ],
+    "Xanax Client": [
+        "d[&gt;l6"
+    ],
+    "Canalex Client": [
+        "kiedhdnt&gt;z&lt;ri"
+    ],
+    "Magenta Client": [
+        "41/41/41/8/41",
+        "d[&lt;n6",
+        "_w_y=6"
+    ],
+    "Tabbychat Client": [
+        "tabbychat/injection"
+    ],
+    "Necrum Client": [
+        "necrum/main.class"
+    ],
+    "Bleach Client": [
+        "kys/bleach/bleach"
+    ],
+    "Cpsmod Client": [
+        "/cpsmod/settings/utility.class",
+        "pw/cinque/cpsmod/spooftype.class"
+    ],
+    "Wet Noodle Client": [
+        "5kpoq",
+        "&.ego\\\\^`ijnoz|"
+    ],
+    "Latematt Client": [
+        "pw/latematt/xiv/value/clampedvalue.class"
+    ],
+    "Kurium Client": [
+        "10/10/80/41",
+        "10/10/80/30.classpk"
+    ],
+    "Onetap Client": [
+        ".onetap.cc"
+    ],
+    "Lemon Client": [
+        "lemon.the.pvper.wrapper",
+        "lemon/the/pvper/mods"
+    ],
+    "Durtaog Client": [
+        "durtaog/client",
+        "durtaog/client/"
+    ],
+    "Grand0X Client": [
+        "xyz/grand0x/gui/component/frame",
+        "xyz/grand0x/m0dules",
+        "xyz/grand0x/gui"
+    ],
+    "Veiv Client": [
+        "veiv(client - watermark)",
+        "(lhi/ak;ilhi/q;)v",
+        "veiv client - watermark",
+        "hi.a2"
+    ],
+    "Billybob1060 Client": [
+        "me/billybob1060/"
+    ],
+    "Double Clicker": [
+        "doubleclicker.class"
+    ],
+    "Particlemod Cheat": [
+        "\"particlemod/particlemod$1.class\");"
+    ],
+    "Aperture Client": [
+        "olaperture/module/modulemanager;",
+        "aperture.class",
+        "aperture/module"
+    ],
+    "Battycoordinates Client": [
+        "batty/ui/server/serverproxy"
+    ],
+    "Phoenix Client": [
+        "phoenix/modules"
+    ],
+    "Timechanger Cheat": [
+        "pww/cinque/timechanger/"
+    ],
+    "Timechanger Misplace": [
+        "pw/cinque/timechanger/commands/commandfasttime.classut",
+        "src/a.class",
+        "timetype.classut",
+        "src/pk?"
+    ],
+    "Ocmc Reach Client": [
+        "([ssl)z"
+    ],
+    "Crypt Client": [
+        "c;rr.y_pt-n0gt^ycx@"
+    ],
+    "Syphlex Client": [
+        "syphlex forge.jar"
+    ],
+    "Way Client": [
+        "net/prinnce/wayclient",
+        "prinnce/",
+        "net/prinnce/wayclient/eventmod"
+    ],
+    "Delix Client": [
+        "delix_skidprotect"
+    ],
+    "Sallos Client": [
+        "sallos/sallos",
+        "sallos_by_soirr"
+    ],
+    "Tojatta Clicker": [
+        "me.tojatta.clicker",
+        "me/tojatta/clicker",
+        "me.tojatta.clicker.ui.cl"
+    ],
+    "Pandora Client": [
+        "pandora\\\\modules\\\\combat"
+    ],
+    "Harambe Client": [
+        "harambe.png",
+        "maven/harambe"
+    ],
+    "Incognito Client": [
+        "czaarek99/injection",
+        "incognto",
+        "/czaarek99/"
+    ],
+    "Labymod Modified Client": [
+        "labymod_nngskjgkjsbkljsblkfblfbslk"
+    ],
+    "Flare Client": [
+        "assets/minecraft/flare"
+    ],
+    "Togglesneak Client": [
+        "triggerbot delay (ms randomized)"
+    ],
+    "Regedit Client": [
+        "ssrock_velocity"
+    ],
+    "Avix Client": [
+        "/aristhena/"
+    ],
+    "X-Ray Modification": [
+        "xray/bypass/xray$1"
+    ],
+    "Drek Client": [
+        "bmv4devszw1lbnq=",
+        "https://github.com/madakai/madaclientv1/raw/master/updater.jar",
+        "znvuy18",
+        "dg82fo.pw"
+    ],
+    "Azure Clint": [
+        "/azurwebsites"
+    ],
+    "Alkazuz Client": [
+        "br/alkazuz/irctwitterlogger.class"
+    ],
+    "Nein Client": [
+        "birkenfosegetunchtenemvertreibenzueidakerleinezehnheihutdasz.class"
+    ],
+    "Spook Client": [
+        "spook:sword.png",
+        "spook/autoclicker.png"
+    ],
+    "Leakforums Client": [
+        "leakforums.net.user665158.modules.smoothaimbot"
+    ],
+    "Skilled Client": [
+        "/s/%e2%80%8d%e2%80%8d%e2%80%89%e2%80%8a.class"
+    ],
+    "Wurst Client": [
+        "net/wurstclient/features/mod"
+    ],
+    "Maxou Client": [
+        "data/maxou"
+    ],
+    "Lsd Clicker": [
+        "lsdclicker.xml"
+    ],
+    "Flux Client": [
+        "assets/minecraft/flux/"
+    ],
+    "Labymod Client": [
+        "de.labymod.client.modules.impl.aimassist"
+    ],
+    "Asparagus Client": [
+        "our/mod/asparagus"
+    ],
+    "Metro Client": [
+        "assets/metro/",
+        "assets/metro/fonts"
+    ],
+    "G Client": [
+        "triggerbot [g]"
+    ],
+    "Dewgs Cheat": [
+        "me/dewgs/particlemod/x/fakemefraclass123456"
+    ],
+    "Ethylene Client": [
+        "ethylene.jar",
+        "net/frozenorb/h2c/clickhold.class"
+    ],
+    "Priority Client": [
+        "priority/hit/range/"
+    ],
+    "Syntax Client": [
+        "tsissamia"
+    ],
+    "Mousetweaks Client": [
+        "mousetweaks/mousebutton.c"
+    ],
+    "Hekate Client": [
+        "textures/hekate/bg"
+    ],
+    "String Cleaner": [
+        "lsquad.dll"
+    ],
+    "Thehen101 Client": [
+        "net/azurewebsites/thehen101/gc/mod/triggerbot.class"
+    ],
+    "0X22 Client": [
+        "cracked by 0x22"
+    ],
+    "Cancer Client": [
+        "net.cancer.proxyclient",
+        "net/cancer/proxyclient"
+    ],
+    "Huume Client": [
+        "m/y/o/o/r.class",
+        "t/z/q/q.class"
+    ],
+    "Batman Client": [
+        "3telltalegames.batmanthetelltaleseries_4p9dzwrngadje"
+    ],
+    "Casper Client": [
+        "cane8993jdsjad98sad9ssa9.altervista.org",
+        "http://cane8993jdsjad98sad9ssa9.altervista.org"
+    ],
+    "Gorilla Client": [
+        "gorilla/gorilla.class"
+    ],
+    "Hitler Client [Optifine Only]": [
+        "net/minecraft/client/main/a"
+    ],
+    "Tmih Clicker": [
+        "me/tmih/yt/ac.class"
+    ],
+    "Killaura Modification": [
+        "prevents killaura from attacking teammates."
+    ],
+    "Motionblur Client": [
+        "pw/cinque/motionblur/tt"
+    ],
+    "Future Client": [
+        "future/api"
+    ],
+    "Vea Client": [
+        "net/kohi/tcpnodelaymod/nul"
+    ],
+    "Misplace Modification": [
+        "\"iqlw"
+    ],
+    "Ygore Client": [
+        "me/ygore/clint/client.classut",
+        "cracked by ygore"
+    ],
+    "Azure Client": [
+        "azurewebsites/"
+    ],
+    "Rowin'S Client": [
+        "me/rowin/destruct"
+    ],
+    "Liquidbounce Client": [
+        ".liquidbounce.injection.",
+        "meta-inf/byccbluex/liquidbounce/",
+        "tk/ccbluex/liquidbounce/injection/mixins/mixinguibutton.class",
+        "liquidbounce/taco/1.png",
+        "net.ccbluex.liquidbounce.injection.mixins.mixinblockladder"
+    ],
+    "Fusked Client": [
+        "cracked  by fusked"
+    ],
+    "Huzuni Client": [
+        "assets/minecraft/huzuni/title.png",
+        "assets/minecraft/huzuni"
+    ],
+    "Zeroday Client": [
+        "zerodayboi/c"
+    ],
+    "Xtc Client": [
+        "a/a/a/oo000o00o0o00oo"
+    ],
+    "Javlin Client": [
+        "me/javlin/sharpnessparticles/sharpnessparticles3.classpk"
+    ],
+    "X-Ray Feature": [
+        "net/minecraftxray/cv",
+        "net/minecraftxray",
+        "hypixel/xray/bypass/xray$1"
+    ],
+    "Aspargus Client": [
+        "our.mod.asparagus"
+    ],
+    "W0Mb4T Client": [
+        "mojang/craft/block/w0mb4t/ac$m"
+    ],
+    "Zero Client": [
+        "me/zero/clarinet/impact.class"
+    ],
+    "Bray Client": [
+        "bray/axis"
+    ],
+    "Best Client": [
+        "io/netty/bestclient/"
+    ],
+    "Freestyler Client": [
+        "freestyler/tweaker.class"
+    ],
+    "Buddy Client": [
+        "buddy/hijacked"
+    ],
+    "Kryptonite Client": [
+        "/kryptonite/"
+    ],
+    "Main8 Client": [
+        "main8888"
+    ],
+    "Eazy Client": [
+        "eazy/mainmenu/"
+    ],
+    "Small Client": [
+        "small_cheat"
+    ],
+    "Roblox Client (For Minecraft)": [
+        "science/roblox/latch/plugin/plugins/combat/forcefield"
+    ],
+    "Fluidity Client": [
+        "the_fireplace/fluidity"
+    ],
+    "Glock Client": [
+        "glockteam"
+    ],
+    "Ragebot Client": [
+        "minestrike/cops & crims ragebot."
+    ],
+    "Mushway Client": [
+        "stats/settings/shark"
+    ],
+    "Arrow Client": [
+        "me/aarow/"
+    ],
+    "Yay Client": [
+        "yay_logo.png"
+    ],
+    "Legacy Client": [
+        "legacy/gui/c"
+    ],
+    "Poisonex Injection Client": [
+        "libs.poisonex.nematode"
+    ],
+    "Spicypaul Client": [
+        "spicypauls"
+    ],
+    "Avatar Client": [
+        "avatarsmokeweedeveryday420",
+        "avatarhasautisminthehead"
+    ],
+    "Adrigoron Client": [
+        "leonhard08kl1156126403715"
+    ],
+    "Yario Client": [
+        "me/yario/fakegui"
+    ],
+    "Frozenorb Client": [
+        "/frozenorb/"
+    ],
+    "Saint Client": [
+        "saintclient"
+    ],
+    "Skuuunksle100 Client": [
+        "fakedestructelsfclass123456",
+        "fakeyticolevclass123456."
+    ],
+    "Cheese Client": [
+        "supercheese200"
+    ],
+    "Hasure Client": [
+        "hasureclient"
+    ],
+    "Garkolym Client": [
+        "de/garkolym/hackeditem.class"
+    ],
+    "Johny'S Client": [
+        "johny9020_"
+    ],
+    "Horizon Client": [
+        "horizon/trism/"
+    ],
+    "Clint Client": [
+        "textures/clint/background"
+    ],
+    "Raizex Client": [
+        "me/raizex/ancient/module"
+    ],
+    "Wombo Client": [
+        "womboclient\\\\\\\\womboclient",
+        "womboclient\\\\womboclient"
+    ],
+    "Snine Client": [
+        "com/s9_/"
+    ],
+    "Dezztroy Client": [
+        "dezztroy"
+    ],
+    "Bg2 Client": [
+        "minecraft/textures/gui/bg2"
+    ],
+    "Steeldood Client": [
+        "sl/steeldood/bit/client/module/impl/combat/moduleautoclicker"
+    ],
+    "Atom Client": [
+        "atomclient4beta"
+    ],
+    "Paralyzed Client": [
+        "paralyzed.module.modules"
+    ],
+    "Zues Client": [
+        "zues/altmanager"
+    ],
+    "Samarev Client": [
+        "samerdev%20sub%20me"
+    ],
+    "Reizam Client": [
+        "fr/reizam/deiramod/mods/reach.class"
+    ],
+    "Skill Client": [
+        "skillclient-logo.png"
+    ],
+    "Rupture Client": [
+        "rupture/gui/aquagui/ruptureclickgui.class"
+    ],
+    "Porn Client": [
+        "youre_watching_brazzers_"
+    ],
+    "Rekt Client": [
+        "gui/rekt"
+    ],
+    "Alaska Client": [
+        "/rogers/alaska"
+    ],
+    "Children Client": [
+        "children/gui"
+    ],
+    "Yellow Light Client": [
+        "yellowlight2"
+    ],
+    "Krypto B1 Client": [
+        "me/tru3/base/modules/modulemanager"
+    ],
+    "Porkchop Client": [
+        "porkchop_era"
+    ],
+    "Av Client": [
+        "avclienttrig"
+    ],
+    "Aristois Client": [
+        "net/aristois/opencode/",
+        "me/deftware/client",
+        "me/deftware/client/framework/main/emcmod"
+    ],
+    "Provida Client": [
+        "/provida/"
+    ],
+    "Chilli Caden Client": [
+        "0x71756747815855352521535263565341",
+        "caden/modules/",
+        "package./caden/"
+    ],
+    "Perocent Client": [
+        "perocent/"
+    ],
+    "Scooby Client": [
+        "net/minecraft/scooby/util/modeutils.class"
+    ],
+    "Austin Client": [
+        "me/austin/client/modules"
+    ],
+    "Rape Client": [
+        "rapeclient"
+    ],
+    "Xerxes Client": [
+        "xerxes.jar"
+    ],
+    "Seven Client": [
+        "7.modulelist"
+    ],
+    "Wenzys Injection Client": [
+        "io.wenzys",
+        "/wenzys/"
+    ],
+    "Dontfuckwith Client": [
+        "dontfuckwith"
+    ],
+    "Veteran Client": [
+        "assets/minecraft/veteran/alt.png"
+    ],
+    "Unfair Advantage [Swap Potions]": [
+        "auto swaps throwable potions"
+    ],
+    "Generic Autoclicker Config": [
+        "autoclicker.properties",
+        "clicker/setvalue",
+        "clicker.setvalue"
+    ],
+    "Generic X-Ray Config": [
+        "xray.cfg",
+        "xray.properties"
+    ],
+    "Generic Aimbot Config": [
+        "isaimbotenabled",
+        "aimbot_range"
+    ],
+    "Generic Reach Config": [
+        "aura_range"
+    ],
+    "Generic Triggerbot Config": [
+        "triggerbot_delay"
+    ],
+    "Generic Autoclicker Module": [
+        "modules/autoclicker"
+    ],
+    "Generic Forcefield Module": [
+        "modules/forcefield"
+    ],
+    "Generic Killaura Module": [
+        "modules/killaura"
+    ],
+    "Generic Smoothaim Module": [
+        "modules/smoothaim"
+    ],
+    "Generic Velocity Module": [
+        "modules/velocity"
+    ],
+    "Generic Aura Module": [
+        "modules/aura.class"
+    ],
+    "Generic Range Module": [
+        "mods/range.class"
+    ],
+    "Generic Combat Module": [
+        "mods/combat/"
+    ],
+    "Generic Java Autoclicker": [
+        "autoclicker.java",
+        "autoclicker.class"
+    ],
+    "Generic Java Pingspoof": [
+        "pingspoof.class",
+        "pingspoof.java"
+    ],
+    "Generic Java Reach": [
+        "reachmod.class",
+        "extendedreach.java",
+        "reach/reach.class"
+    ],
+    "Generic Java Antivoid": [
+        "antivoid.class",
+        "antivoid.java"
+    ],
+    "Generic Java Aimbot": [
+        "aimbot.java",
+        "aimbotgui.java",
+        "aimbot.class"
+    ],
+    "Generic Java Triggerbot": [
+        "triggerbot.java",
+        "triggerbot.class"
+    ],
+    "Generic Java Cheststealer": [
+        "cheststealer.java",
+        "cheststealer.class"
+    ],
+    "Generic Java Smoothaimbot": [
+        "smoothaimbot.java",
+        "smoothaimbot.class"
+    ],
+    "Generic Java Forcefield": [
+        "forcefield.class",
+        "forcefield.java"
+    ],
+    "Generic Java Autoarmor": [
+        "autoarmor.java",
+        "autoarmor.class"
+    ],
+    "Generic Java Aimassist": [
+        "aimassist.class",
+        "aimassist.java"
+    ],
+    "Generic Java Autopearl": [
+        "autopearl.java",
+        "autopearl.class"
+    ],
+    "Generic Java Doubleclicker": [
+        "doubleclicker.java"
+    ],
+    "Generic Java Combat Util": [
+        "combatutil.java"
+    ],
+    "Generic Java Packet Modification": [
+        "packetmode.java"
+    ],
+    "Generic Java Killaura": [
+        "killaura.java"
+    ],
+    "Generic Autoclicker Feature": [
+        "combat/autoclicker"
+    ],
+    "Generic Killaura Feature": [
+        "combat/killaura",
+        "combat/aura"
+    ],
+    "Generic Velocity Feature": [
+        "combat/velocity"
+    ],
+    "Generic Smoothaim Feature": [
+        "combat/smoothaim"
+    ],
+    "Generic Hitbox Feature": [
+        "combat/hitbox"
+    ],
+    "Generic Aimassist Feature": [
+        "combat/aimassist"
+    ],
+    "Generic Misplace Module": [
+        "tcpack",
+        "tcnh$1",
+        "mcnethandler",
+        "net/minecraft/entity/entity.classpk",
+        "nbtmultipart.class"
+    ],
+    "Generic Selfdestruct": [
+        "-killswitch is enabled, program will shutdown.",
+        "selfdestruct.class",
+        "selfdestruct.java",
+        "self-destructed successfully.",
+        "7selfdestruct"
+    ],
+    "Generic Imgui Interface": [
+        "imgui_log.txt"
+    ],
+    "Generic Java Injection": [
+        "injectiondll.dll"
+    ],
+    "Vapev3 Client": [
+        "-&gt;d=?ad="
+    ],
+    "Vapev2 Client": [
+        "2.47-kill yourself slowly",
+        "d$@;d$dh"
+    ],
+    "Iridium Ghost Client": [
+        "&lt;&gt;^l$0a"
+    ],
+    "Iraid Client": [
+        "irid/a$a.class"
+    ],
+    "Gclient": [
+        "smooth aim [up]"
+    ],
+    "Hitler Client": [
+        "1.8-optifine_hd_u_d5"
+    ],
+    "Internal Doubleclicker": [
+        "tsglu/ke/ac.class"
+    ],
+    "Generic Hitbox Modification": [
+        "me/tsglu/ke/hitboxcommands"
+    ],
+    "Fastplace Feature": [
+        "tsglu/ke/vujohtwfzhotihhhgbgi.class"
+    ],
+    "Safewalk Feature": [
+        "me.tsglu.ke.safewalk"
+    ],
+    "Illegal Modfications": [
+        "n%\\x07la"
+    ],
+    "Knockback Modification": [
+        "dmillerw/ping/client/eventmod",
+        "dmillerw.ping.proxy.clientproxy"
+    ],
+    "Nohacks Module Client": [
+        "[tsgluke] aimbot speed set to"
+    ],
+    "Generic Ilegal Modification": [
+        "javax.swing.jframe",
+        "autoclicker.class",
+        "me/veylkar/pepe",
+        "_w_y6",
+        "net/minecraftxray/cv",
+        "reachmod/reachmod.class",
+        "a/a/a/oo000o00o0o00oo",
+        "_o&`egdik0,ak",
+        "aimbot.class",
+        "ping:textures/ping.png",
+        "aimbot.java",
+        "!(ltrumpclientftw_bape_ggap)v",
+        "autoclicker.java",
+        "antivelocity",
+        "combat/forcefield",
+        "autotool.class",
+        "tsissamia",
+        "isaimbotenabled",
+        "settimerrate",
+        "modules.smoothaim",
+        "leonhard08kl1156126403715",
+        "me.tsglu.ke.djqjbqxtycwqpldszyig",
+        "me.tyler.module.mods.criticals",
+        "combat.autoclicker",
+        "dmillerw.ping.proxy.clientproxy",
+        "net/kohi/tcpnodelaymod/a.classpk",
+        "modules/aimassist",
+        "mojang/craft/block/w0mb4t/ac$m",
+        "czaarek99",
+        "net/wurstclient/features/mod",
+        "awhhshithefuckedup.java",
+        "leakforums.net.user665158.modules.smoothaimbot",
+        "net.cancer.proxyclient",
+        "modules/combat",
+        "me/tsglu/ke/hitboxcommands",
+        "unique/unique0.class",
+        "modules.combat",
+        "knockback.setvalue",
+        "killaura.class",
+        "znvuy18xndg4mjffyq==",
+        "me.tojatta.clicker.ui.cl",
+        "pw/cinque/keystrokesmod/render/awhhshithefuckedup.classut",
+        "doubleclicker.properties",
+        "kyoctaviaprg.omikronclient.com",
+        "net.ccbluex.liquidbounce.injection.mixins.mixinblockladder",
+        "me/tru3/base/modules/modulemanager",
+        "assets/minecraft/huzuni",
+        "hypixel/xray/bypass/xray$1",
+        "aura.class"
+    ],
+    "Generic Ilegal Modificatione": [
+        "autoclicker.class"
+    ],
+    "Anti Ss Tool": [
+        "cucklord inside!"
+    ],
+    "Bleachhack Client": [
+        "org/bleachhack"
+    ],
+    "Spooky Client": [
+        "acs/tabbychat/injection"
+    ],
+    "X-Ray Module": [
+        "/blockvisitor.class"
+    ],
+    "Timechanger Client": [
+        "me/rowin/destruct/"
+    ],
+    "Generic Selfdestruct Feature": [
+        "fakedestructelsfclass123456"
+    ],
+    "Generic Strafe Feature": [
+        "better strafe mod by cheeky/koupah"
+    ],
+    "Aristhena Client": [
+        "aristhena/",
+        "me/aristhena/client"
+    ],
+    "Inject Client": [
+        "com/czaarek99/injectclient/injection/"
+    ],
+    "Vape Lite": [
+        "h4u(&doj]@a",
+        "qy17hc?br8n",
+        "LiteDLL.dll",
+        "7])#######hV0qs'/###[),##/l:$#Q6>##5[n42>c-TH`->>#/e>11NNV=Bv(",
+        "Ir<($u&)#(&?L9Rg3H)4fiEp^iI9O8KnTj,]H?D*r7'M;PwZ9K0E^k&",
+        "[iLA<QT;5HKD+@qQ'NQ(3_PLhE48R.qAPSwQ0/WK?Z",
+        "?tim@@YA_KPEAX@Z",
+        "is not a valid class file - has magic value 0x%08x",
+        "_&2UdB86e%B/:=>)N4xeW.*wft-;$'58-ESqr<b?UI(_%@[P46>#U`'6AQ]m&6/`Z>#S?YY#Vc;r7"
+    ],
+    "Automemer Clicker": [
+        "ihaveadigbick"
+    ],
+    "Azurya Client": [
+        "c:\\users\\azurya\\source\\"
+    ],
+    "Generic Memory Modification": [
+        "twobi07yaly4cstel9",
+        "yf kpm&lt;anm/rzp",
+        "y&lt;fhubjf&-m"
+    ],
+    "Drip Client": [
+        "!zt1\\&gt;xz2"
+    ],
+    "Entropy Client": [
+        "mw,]prrr);"
+    ],
+    "Drip Lite Client": [
+        "/p$o$be4g]vm%"
+    ],
+    "Generic Aimbot Feature": [
+        "isaimbotenabled",
+        "leakforums.net.user665158.modules.smoothaimbot"
+    ],
+    "Generic Knockback Modification": [
+        "knockback.setvalue"
+    ],
+    "Proxy Client": [
+        "net.cancer.proxyclient",
+        "dmillerw.ping.proxy.clientproxy"
+    ],
+    "Generic Criticals Module": [
+        "me.tyler.module.mods.criticals"
+    ],
+    "Generic Hitbox Module": [
+        "me/tsglu/ke/hitboxcommands"
+    ],
+    "Lowkey Client": [
+        "!/fastcraft/e.class"
+    ]
+}
