@@ -183,7 +183,7 @@ upload_to_file_io() {
 
 # Check if destination is Discord or file.io
 if [ "$DESTINATION" == "discord" ]; then
-  send_file_to_discord "output/results.txt" "Files idk" >& /dev/null
+  send_file_to_discord "output/results.txt" "Files" >& /dev/null
   echo "Sent results to Webhook."
 elif [ "$DESTINATION" == "fileio" ]; then
   echo "Hello! It seems you've opted to use file.io, rather than Discord webhooks. Unfortunate, as this disables some checks"
@@ -200,7 +200,7 @@ if [ "$DESTINATION" == "discord" ]; then
   echo "Checking Strings..."
   sudo -E checks/internal/StringCheck.sh $JAVA_PID
   sudo -E python3 checks/internal/StringCheck.py $JAVA_PID strings/javaw-detection.txt
-  send_file_to_discord "output/results.txt" "Files idk" >& /dev/null
+  send_file_to_discord "output/results.txt" "Files" >& /dev/null
   echo -e "${RED}Scan finished!${NC}"
 else
   echo "Doing a funny memory dump on the Minecraft Process..."
