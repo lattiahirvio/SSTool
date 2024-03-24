@@ -49,7 +49,6 @@ strings_to_check=(
 "awhhshithefuckedup.java"
 "leakforums.net.user665158.modules.smoothaimbot"
 "net.cancer.proxyclient"
-"modules/combat"
 "me/tsglu/ke/hitboxcommands"
 "unique/unique0.class"
 "modules.combat"
@@ -137,13 +136,11 @@ strings_to_check=(
 "triggerbot"
 "autopot"
 "auto pot"
-"nofall"
-"no fall"
 "wallhack"
 "wall hack"
 "autoclick"
 "auto click"
-"reach"
+"reach.class"
 "aimboat"
 "aim boat"
 "antivoid"
@@ -397,7 +394,6 @@ strings_to_check=(
 "Max CPS"
 "TPAura_Attack"
 "Aura_Max CPS"
-"block.scaffolding"
 "FightBot"
 "Fight Bot"
 "Edge Sneak"
@@ -449,21 +445,20 @@ strings_to_check=(
 "WatchdogAntiBot"
 "MatrixAntiBot"
 "Watchdog AntiBot"
-"module/"
-"module."
-"modules/"
-"modules."
+"module.combat"
+"module/combat"
+"modules.combat"
+"modules/combat"
 "Bind (module name) to"
 "Choose a (module name) value"
 ".block"
-"keybind"
 "| Keybind"
 "Bind_"
 "Auto (on some modules)"
 )
 
 for string in "${strings_to_check[@]}"; do
-    if grep -q "$string" output/dumpJ.txt; then
+    if grep -Fq "$string" output/dumpJ.txt; then
         echo -e "[⚠️] Failed Generic Client C with string $string [In instance]" >> output/results.txt
         echo -e "[⚠️] \033[31mFailed Generic Client C with string $string [In instance]\033[0m"
     fi
