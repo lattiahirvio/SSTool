@@ -29,7 +29,7 @@ git clone https://github.com/lattiahirvio/SSTool.git && cd SSTool && sudo -E ./t
 ```
 
 ## Features
-The Tool has quite a lot of features, which are lsited below:
+The Tool has quite a lot of features, which are listed below:
 - Checks for the most common Injection clients for Linux, such as Phantom and Doomsday
 - Checks for mod deletions after game launch
 - General information gathering, such as distro, bash history, disk size
