@@ -216,4 +216,4 @@ else
   python external-tools/LinkGen.py
 fi
 
-# python external-tools/LinkGen.py output/results.txt $DESTINATION "$WEBHOOK_URL"
+rm -rf output/*
