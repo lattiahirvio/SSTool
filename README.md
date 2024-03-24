@@ -1,5 +1,5 @@
 # SSTool
-This is a simple SS tool written in BASh and Python. 
+This is a simple SS tool for Linux (and possibly MacOS, although MacOS is officially unsupported, but may work) written in BASh and Python. 
 
 ## Usage
 The tool is simple to use. There are two possible ways to retrieve the information the tool gathers. The 1st way is a bit more complicated.
@@ -29,7 +29,7 @@ git clone https://github.com/lattiahirvio/SSTool.git && cd SSTool && sudo -E ./t
 ```
 
 ## Features
-The Tool has quite a lot of features, which are lsited below:
+The Tool has quite a lot of features, which are listed below:
 - Checks for the most common Injection clients for Linux, such as Phantom and Doomsday
 - Checks for mod deletions after game launch
 - General information gathering, such as distro, bash history, disk size
