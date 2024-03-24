@@ -193,6 +193,9 @@
     ],
     "Doomsday Client": [
         "qnqyajgmsomlyayrjjusdssgbybrkicxksi",
+        "ucoz",
+        "gRYVNDkJr03nW7iDJP6gXnNM3mex+IF3i+YUCozyWEs=",
+        "yoKXth8DfBuCOZGvc+OIWUebiXuVtoJEPrFaoKA8HrY=",
         "ikylcuahxpjqttinxsoykhwihjjgpaxqubcrfopoduutguenoe",
         "java_com_oiseth_doomsday_launch_nativeloader_start",
         "java_com_oiseth_doomsday",
