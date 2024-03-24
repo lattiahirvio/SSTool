@@ -216,4 +216,4 @@ else
   python external-tools/LinkGen.py
 fi
 
-rm -rf output/*
+#rm -rf output/*
