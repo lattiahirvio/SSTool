@@ -19,7 +19,6 @@ PURPLE='\033[0;35m'
 CYAN='\033[0;36m'
 WHITE='\033[0;37m'
 
-
 # Parsing command-line arguments
 while [[ $# -gt 0 ]]; do
     key="$1"
@@ -73,6 +72,7 @@ Info="Version: $Version       Author: lagoon         User: $SUDO_USER"
 clear
 echo -e "$AsciiArt"
 echo "$Info"
+mkdir output
 
 getModsModificationTime() {
   local modsDirectory="/home/$SUDO_USER/.minecraft/mods"
