@@ -1,5 +1,5 @@
 # SSTool
-This is a simple SS tool written in BASh and Python. 
+This is a simple SS tool for Linux (and possibly MacOS, although MacOS is officially unsupported, but may work) written in BASh and Python. 
 
 ## Usage
 The tool is simple to use. There are two possible ways to retrieve the information the tool gathers. The 1st way is a bit more complicated.
