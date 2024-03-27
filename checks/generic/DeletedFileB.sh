@@ -31,19 +31,22 @@ if ! ps -p $JAVA_PID > /dev/null; then
     exit 1
 fi
 
+findMinecraftDirectory() {
+    local MinecraftPath=$(ls -l /proc/$(pgrep java)/fd 2>/dev/null | grep -o '/.*\.minecraft' | head -n 1)
+    [[ -z $MinecraftPath ]] && { echo "ERROR: Minecraft directory not found."; exit 1; }
+    echo "$MinecraftPath"
+}
+
 # Check if the mods folder was modified after the Minecraft game was launched
 check_mods_directory() {
     local MINECRAFT_START_TIME
     MINECRAFT_START_TIME=$(get_process_start_time "$JAVA_PID")
 
     local MinecraftPath
-    MinecraftPath=$(find /proc/$JAVA_PID/fd -type l -printf "%l\n" 2>/dev/null | grep -m 1 '\.minecraft')
-
-    # Extract only the directory path up to ".minecraft"
-    MinecraftPath=${MinecraftPath%%/.minecraft*}
+    MinecraftPath=$findMinecraftDirectory
 
     # Append ".minecraft/mods" to the extracted path
-    local ModsPath="$MinecraftPath/.minecraft/mods"
+    local ModsPath="$MinecraftPath/mods"
 
     # Check if MinecraftPath is empty
     if [ -z "$ModsPath" ]; then

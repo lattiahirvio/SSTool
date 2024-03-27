@@ -77,25 +77,8 @@ mkdir output
 
 # Function to find Minecraft directory
 findMinecraftDirectory() {
-    # ProcessCheck is assumed to be defined earlier in your script
-    local ProcessCheck=$(pgrep java)
-
-    # Find the filepath containing ".minecraft" associated with the Java process
-    local MinecraftPath
-    MinecraftPath=$(find /proc/$ProcessCheck/fd -type l -printf "%l\n" 2>/dev/null | grep -m 1 '\.minecraft')
-
-    # Check if MinecraftPath is empty
-    if [ -z "$MinecraftPath" ]; then
-        echo "ERROR: Minecraft directory not found."
-        exit 1
-    fi
-
-    # Extract only the directory path up to ".minecraft"
-    MinecraftPath=${MinecraftPath%%/.minecraft*}
-
-    # Append ".minecraft" to the extracted path
-    MinecraftPath="$MinecraftPath/.minecraft"
-
+    local MinecraftPath=$(ls -l /proc/$(pgrep java)/fd 2>/dev/null | grep -o '/.*\.minecraft' | head -n 1)
+    [[ -z $MinecraftPath ]] && { echo "ERROR: Minecraft directory not found."; exit 1; }
     echo "$MinecraftPath"
 }
 

@@ -6,25 +6,8 @@ NC='\033[0m' # No Color
 
 # Function to find Minecraft directory
 find_minecraft_directory() {
-    # ProcessCheck is assumed to be defined earlier in your script
-    local ProcessCheck=$(pgrep java)
-
-    # Find the filepath containing ".minecraft" associated with the Java process
-    local MinecraftPath
-    MinecraftPath=$(find /proc/$ProcessCheck/fd -type l -printf "%l\n" 2>/dev/null | grep -m 1 '\.minecraft')
-
-    # Check if MinecraftPath is empty
-    if [ -z "$MinecraftPath" ]; then
-        echo "ERROR: Minecraft directory not found."
-        exit 1
-    fi
-
-    # Extract only the directory path up to ".minecraft"
-    MinecraftPath=${MinecraftPath%%/.minecraft*}
-
-    # Append ".minecraft" to the extracted path
-    MinecraftPath="$MinecraftPath/.minecraft"
-
+    local MinecraftPath=$(ls -l /proc/$(pgrep java)/fd 2>/dev/null | grep -o '/.*\.minecraft' | head -n 1)
+    [[ -z $MinecraftPath ]] && { echo "ERROR: Minecraft directory not found."; exit 1; }
     echo "$MinecraftPath"
 }
 
@@ -34,41 +17,38 @@ MinecraftDirectory=$(find_minecraft_directory)
 # Get elapsed time since Minecraft process started
 check1=$(ps -p $(pidof java) -o etimes=)
 
-# Initialize check2 and check3 to default values
-check2="ERROR: Mods folder not found"
-check3="ERROR: Subdirectories in mods folder not found"
-
-# Calculate last modification time of main mods folder
-mods_last_modified=$(find "$MinecraftDirectory/mods"/* -maxdepth 0 -exec stat -c %Y {} + 2>/dev/null)
-if [ -n "$mods_last_modified" ]; then
-    check2=$(( $(date +%s) - $mods_last_modified ))
+# Check if mods folder exists
+if [ ! -d "$MinecraftDirectory/mods" ]; then
+    echo "ERROR: Mods folder not found" >&2
+    exit 1
 fi
 
-# Calculate last modification time of subdirectories in mods folder
-subdirs_last_modified=$(find "$MinecraftDirectory/mods"/*/* -maxdepth 0 -exec stat -c %Y {} + 2>/dev/null)
-if [ -n "$subdirs_last_modified" ]; then
-    check3=$(( $(date +%s) - $subdirs_last_modified ))
+# Get the modification time of the mods folder
+mods_last_modified=$(stat -c %Y "$MinecraftDirectory/mods")
+
+# Check if there are any files in the mods folder
+mods_files=$(find "$MinecraftDirectory/mods" -maxdepth 1 -type f)
+if [ -z "$mods_files" ]; then
+    echo "No files found in the mods folder" >&2
+    exit 1
 fi
+
+# Initialize variable to store the maximum file modification time
+max_file_mod_time=0
+
+# Iterate over each file in the mods folder and find the maximum modification time
+for file in $mods_files; do
+    file_mod_time=$(stat -c %Y "$file")
+    if [ "$file_mod_time" -gt "$max_file_mod_time" ]; then
+        max_file_mod_time=$file_mod_time
+    fi
+done
 
 # Write results to output file
-if [ "$check2" == "ERROR: Mods folder not found" ]; then
-    echo "The Error May be due to the user not having an existing mods folder, check if the user is some other client other than Vanilla" >> output/results.txt
-    echo -e "${RED}The Error May be due to the user not having an existing mods folder, check if the user is some other client other than Vanilla${NC}"
-fi
-
-if [ "$check1" -gt 0 ] && [ "$check1" -gt "$check2" ]; then
-    echo "User Modified Mods Folder After Minecraft was launched (Generic 4)" >> output/results.txt
-    echo -e "${RED}User Modified Mods Folder After Minecraft was launched (Generic 4)${NC}"
+if [ "$max_file_mod_time" -gt "$mods_last_modified" ] || [ "$max_file_mod_time" -gt "$start_time" ]; then
+    echo "User modified files in the mods folder after Minecraft was launched" >> output/results.txt
+    echo -e "${RED}User modified files in the mods folder after Minecraft was launched${NC}"
 else
-    echo "Minecraft was launched $check1 seconds ago & user's mods folder was last modified $check2 seconds ago" >> output/results.txt
-    echo -e "Minecraft was launched ${RED}$check1 seconds${NC} ago & user's mods folder was last modified ${RED}$check2 seconds${NC} ago"
-fi
-
-if [ "$check1" -gt 0 ] && [ "$check1" -gt "$check3" ]; then
-    echo "User Modified Subdirectories in Mods Folder After Minecraft was launched (Generic 4A)" >> output/results.txt
-    echo -e "${RED}User Modified Subdirectories in Mods Folder After Minecraft was launched (Generic 4A)${NC}"
-else
-    echo "Minecraft was launched $check1 seconds ago & user's subdirectories in mods folder were last modified $check3 seconds ago" >> output/results.txt
-    echo -e "Minecraft was launched ${RED}$check1 seconds${NC} ago & user's subdirectories in mods folder were last modified ${RED}$check3 seconds${NC} ago"
+    echo "Minecraft was launched $check1 seconds ago & user's mods folder was last modified $mods_last_modified seconds ago" >> output/results.txt
 fi
 

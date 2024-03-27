@@ -4,8 +4,14 @@
 rm -f /tmp/sstool*.tmp
 rm -f /tmp/jars.sstool
 
+findMinecraftDirectory() {
+    local MinecraftPath=$(ls -l /proc/$(pgrep java)/fd 2>/dev/null | grep -o '/.*\.minecraft' | head -n 1)
+    [[ -z $MinecraftPath ]] && { echo "ERROR: Minecraft directory not found."; exit 1; }
+    echo "$MinecraftPath"
+}
+
 # Calculate SHA-256 checksums for Minecraft mod files
-Sha256Check=$(sha256sum /home/$SUDO_USER/.minecraft/mods/* 2>/dev/null)
+Sha256Check=$(sha256sum $findMinecraftDirectory/mods/* 2>/dev/null)
 
 # Append checksums to a temporary file
 echo "$Sha256Check" >> /tmp/sstool$RANDOM.tmp
