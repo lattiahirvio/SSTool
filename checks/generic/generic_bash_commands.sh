@@ -42,11 +42,17 @@ send_command_output() {
   } >> "$OUTPUT_FILE" 2>&1
 }
 
+findMinecraftDirectory() {
+    local MinecraftPath=$(ls -l /proc/$(pgrep java)/fd 2>/dev/null | grep -o '/.*\.minecraft' | head -n 1)
+    [[ -z $MinecraftPath ]] && { echo "ERROR: Minecraft directory not found."; exit 1; }
+    echo "$MinecraftPath"
+}
+
 echo "Running commands..." >> output/results.txt
 
 # Run the commands and send the results to the output file
 send_command_output "ps -p $JAVA_PID -o lstart,etime,cmd"
-send_command_output "stat /home/$SUDO_USER/.minecraft/mods"
+send_command_output "stat $findMinecraftDirectory/mods"
 send_command_output "who -H"
 send_command_output "cat /etc/os-release"
 send_command_output "history 100"
