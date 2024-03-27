@@ -42,8 +42,11 @@ send_command_output() {
   } >> "$OUTPUT_FILE" 2>&1
 }
 
+echo "Running commands..." >> output/results.txt
+
 # Run the commands and send the results to the output file
 send_command_output "ps -p $JAVA_PID -o lstart,etime,cmd"
+send_command_output "stat /home/$SUDO_USER/.minecraft/mods"
 send_command_output "who -H"
 send_command_output "cat /etc/os-release"
 send_command_output "history 100"
@@ -54,7 +57,6 @@ send_command_output "nmcli con show --active | grep -i vpn"
 send_command_output "nordvpn status"
 send_command_output "cat /home/$SUDO_USER/.minecraft/usercache.json | jq '.[] | {name}'"
 send_command_output "echo $XDG_CURRENT_DESKTOP"
-send_command_output "stat /home/$SUDO_USER/.minecraft/mods"
 send_command_output "sudo -E less /var/log/syslog"
 send_command_output "lsblk"
 send_command_output "ls /tmp/"
