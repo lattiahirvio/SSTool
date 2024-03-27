@@ -140,7 +140,7 @@ runScripts() {
     bash checks/generic/DNScache.sh
 
     echo "Running DeletedFileA"
-    bash checks/generic/DeletedFileA.sh
+    #bash checks/generic/DeletedFileA.sh
 
     echo "Running DeletedFileB"
     bash checks/generic/DeletedFileB.sh -p $JAVA_PID
