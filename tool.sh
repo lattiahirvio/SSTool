@@ -233,7 +233,6 @@ else
   echo "Dumping the the Minecraft Process..."
   sudo external-tools/lsdumper $JAVA_PID >> output/dumpJ.txt
   echo "Finalizing... This might take a while."
-  sudo rm -f output/results.txt
   echo "Checking Strings..."
   sudo -E checks/internal/StringCheck.sh $JAVA_PID
   sudo -E python3 checks/internal/StringCheck.py $JAVA_PID strings/javaw-detection.txt

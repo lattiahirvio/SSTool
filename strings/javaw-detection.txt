@@ -1164,7 +1164,7 @@
     "Nohacks Module Client": [
         "[tsgluke] aimbot speed set to"
     ],
-    "Generic Ilegal Modification": [
+    "Generic Illegal Modification": [
         "javax.swing.jframe",
         "autoclicker.class",
         "me/veylkar/pepe",
