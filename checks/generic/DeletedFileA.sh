@@ -9,7 +9,7 @@ ProcessCheck=$(ps -ef | grep 'java' | grep 'minecraft' | sort -g | awk '{print $
 if [[ -n $ProcessCheck ]]; then
     # Check if a deleted file is mapped by the process
     if grep -q 'deleted' /proc/$ProcessCheck/task/$ProcessCheck/maps; then
-        echo "User associated with Minecraft has a deleted file mapped in memory" >> output/results.txt
-        echo -e "${RED}User associated with Minecraft has a deleted file mapped in memory${NC}"
+        #echo "User associated with Minecraft has a deleted file mapped in memory" >> output/results.txt
+        #echo -e "${RED}User associated with Minecraft has a deleted file mapped in memory${NC}"
     fi
 fi
