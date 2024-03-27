@@ -49,6 +49,7 @@ while [[ $# -gt 0 ]]; do
             ;;
     esac
 done
+
 export SUDO_USER=$SUDO_USER
 
 AsciiArt="
@@ -67,15 +68,39 @@ ${GREEN}     _______.     _______.___________.  ______     ______    __
 |_______/    |_______/       |__|      \______/   \______/  |_______| ${NC}
 "
 
-Info="Version: $Version       Author: lagoon         User: $SUDO_USER"
+Info="Version: $Version       Author: ${PURPLE}lagoon${NC}         User: $SUDO_USER"
 
 clear
 echo -e "$AsciiArt"
-echo "$Info"
+echo -e "$Info"
 mkdir output
 
+# Function to find Minecraft directory
+findMinecraftDirectory() {
+    # ProcessCheck is assumed to be defined earlier in your script
+    local ProcessCheck=$(pgrep java)
+
+    # Find the filepath containing ".minecraft" associated with the Java process
+    local MinecraftPath
+    MinecraftPath=$(find /proc/$ProcessCheck/fd -type l -printf "%l\n" 2>/dev/null | grep -m 1 '\.minecraft')
+
+    # Check if MinecraftPath is empty
+    if [ -z "$MinecraftPath" ]; then
+        echo "ERROR: Minecraft directory not found."
+        exit 1
+    fi
+
+    # Extract only the directory path up to ".minecraft"
+    MinecraftPath=${MinecraftPath%%/.minecraft*}
+
+    # Append ".minecraft" to the extracted path
+    MinecraftPath="$MinecraftPath/.minecraft"
+
+    echo "$MinecraftPath"
+}
+
 getModsModificationTime() {
-  local modsDirectory="/home/$SUDO_USER/.minecraft/mods"
+  local modsDirectory="$findMinecraftDirectory"
   local modsModificationTime
   modsModificationTime=$(stat -c %y "$modsDirectory")
   modsModificationTime=$(date -d "$modsModificationTime" +"%s")
@@ -98,9 +123,9 @@ runScripts() {
     if [ "$DESTINATION" == "discord" ]; then
         if [ -n "$WEBHOOK_URL" ]; then
             echo "Sending mods to a webhook..."
-            # bash checks/internal/Mods2.sh -d "/home/$SUDO_USER/.minecraft/mods" -u "ModChecker" -w "$FILE_WEBHOOK_URL" >& /dev/null
+            bash checks/internal/Mods2.sh -d "$findMinecraftDirectory" -u "ModChecker" -w "$FILE_WEBHOOK_URL" >& /dev/null
             echo "Sending Trash files to a webhook..."
-            # bash checks/generic/TrashCheck.sh -w "$FILE_WEBHOOK_URL" >& /dev/null
+            bash checks/generic/TrashCheck.sh -w "$FILE_WEBHOOK_URL" >& /dev/null
         fi
     fi
   
@@ -108,8 +133,8 @@ runScripts() {
     echo "Running Checks for Recently Launched Programs."
     bash checks/generic/RecentPrograms.sh
 
-    echo "Running checks for recently ran programs."
-    #sudo -E checks/generic/ModifiedFilesA.sh /
+    echo "Running checks for recently modified files."
+    sudo -E checks/generic/ModifiedFilesA.sh /
 
     echo "Running DNSCache checks"
     bash checks/generic/DNScache.sh
@@ -120,8 +145,8 @@ runScripts() {
     echo "Running DeletedFileB"
     bash checks/generic/DeletedFileB.sh -p $JAVA_PID
 
-    #echo "Running Minecraft folder modification checks"
-    #bash checks/generic/MinecraftFolderCheck.sh
+    echo "Running Minecraft folder modification checks"
+    bash checks/generic/MinecraftFolderCheck.sh
 
     echo "Running Bash History checks"
     bash checks/generic/HistoryCheck.sh
@@ -152,6 +177,8 @@ runScripts() {
     bash checks/internal/Mods2.sh
 
     clear
+    echo -e "$AsciiArt"
+    echo -e "$Info"
 }
 
 runScripts
@@ -203,7 +230,7 @@ if [ "$DESTINATION" == "discord" ]; then
   send_file_to_discord "output/results.txt" "Files" >& /dev/null
   echo -e "${RED}Scan finished!${NC}"
 else
-  echo "Doing a funny memory dump on the Minecraft Process..."
+  echo "Dumping the the Minecraft Process..."
   sudo external-tools/lsdumper $JAVA_PID >> output/dumpJ.txt
   echo "Finalizing... This might take a while."
   sudo rm -f output/results.txt

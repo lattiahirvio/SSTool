@@ -6,7 +6,7 @@ sudo rm -f /tmp/DMP*.tmp
 rm -f /tmp/javaStrings.tmp
 
 # Get PID of the Java process
-mc=$(pidof java)
+mc=$(pgrep java)
 
 # Generate memory map and extract relevant information
 pmap -p --show-path "$mc" >> "/tmp/MCDUMP$RANDOM.tmp"
@@ -16,12 +16,12 @@ cut -c 32-128 /tmp/MCDUMP*.tmp >> /tmp/DMP2.tmp
 
 # Add empty lines for formatting in results file
 for ((i=0; i<12; i++)); do
-    echo >> /tmp/scanresults1.txt
+    echo >> output/results.txt
 done
 
 # Add separator and header to results file
-echo "____________________________________________________________" >> /tmp/scanresults1.txt
-echo "Memory Dump" >> /tmp/scanresults1.txt
+echo "____________________________________________________________" >> output/results.txt
+echo "Memory Dump" >> output/results.txt
 
 # Filter out lines containing spaces
 grep -v "[ ]" /tmp/DMP2.tmp >> /tmp/DMP3.tmp

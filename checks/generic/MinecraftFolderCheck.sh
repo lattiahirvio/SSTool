@@ -4,6 +4,33 @@
 RED='\033[0;31m'
 NC='\033[0m' # No Color
 
+# Function to find Minecraft directory
+find_minecraft_directory() {
+    # ProcessCheck is assumed to be defined earlier in your script
+    local ProcessCheck=$(pgrep java)
+
+    # Find the filepath containing ".minecraft" associated with the Java process
+    local MinecraftPath
+    MinecraftPath=$(find /proc/$ProcessCheck/fd -type l -printf "%l\n" 2>/dev/null | grep -m 1 '\.minecraft')
+
+    # Check if MinecraftPath is empty
+    if [ -z "$MinecraftPath" ]; then
+        echo "ERROR: Minecraft directory not found."
+        exit 1
+    fi
+
+    # Extract only the directory path up to ".minecraft"
+    MinecraftPath=${MinecraftPath%%/.minecraft*}
+
+    # Append ".minecraft" to the extracted path
+    MinecraftPath="$MinecraftPath/.minecraft"
+
+    echo "$MinecraftPath"
+}
+
+# Get Minecraft directory
+MinecraftDirectory=$(find_minecraft_directory)
+
 # Get elapsed time since Minecraft process started
 check1=$(ps -p $(pidof java) -o etimes=)
 
@@ -12,13 +39,13 @@ check2="ERROR: Mods folder not found"
 check3="ERROR: Subdirectories in mods folder not found"
 
 # Calculate last modification time of main mods folder
-mods_last_modified=$(find /home/$SUDO_USER/.minecraft/mods/* -maxdepth 0 -exec stat -c %Y {} + 2>/dev/null)
+mods_last_modified=$(find "$MinecraftDirectory/mods"/* -maxdepth 0 -exec stat -c %Y {} + 2>/dev/null)
 if [ -n "$mods_last_modified" ]; then
     check2=$(( $(date +%s) - $mods_last_modified ))
 fi
 
 # Calculate last modification time of subdirectories in mods folder
-subdirs_last_modified=$(find /home/$SUDO_USER/.minecraft/mods/*/* -maxdepth 0 -exec stat -c %Y {} + 2>/dev/null)
+subdirs_last_modified=$(find "$MinecraftDirectory/mods"/*/* -maxdepth 0 -exec stat -c %Y {} + 2>/dev/null)
 if [ -n "$subdirs_last_modified" ]; then
     check3=$(( $(date +%s) - $subdirs_last_modified ))
 fi

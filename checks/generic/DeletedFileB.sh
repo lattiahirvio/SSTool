@@ -1,5 +1,7 @@
-
 #!/bin/bash
+
+NC='\033[0m' # No Color
+RED='\033[0;31m'
 
 # Parsing command-line arguments
 while [[ $# -gt 0 ]]; do
@@ -34,12 +36,29 @@ check_mods_directory() {
     local MINECRAFT_START_TIME
     MINECRAFT_START_TIME=$(get_process_start_time "$JAVA_PID")
 
+    local MinecraftPath
+    MinecraftPath=$(find /proc/$JAVA_PID/fd -type l -printf "%l\n" 2>/dev/null | grep -m 1 '\.minecraft')
+
+    # Extract only the directory path up to ".minecraft"
+    MinecraftPath=${MinecraftPath%%/.minecraft*}
+
+    # Append ".minecraft/mods" to the extracted path
+    local ModsPath="$MinecraftPath/.minecraft/mods"
+
+    # Check if MinecraftPath is empty
+    if [ -z "$ModsPath" ]; then
+        echo "Mods directory not found."
+        exit 1
+    fi
+
     local MODS_MODIFICATION_TIME
-    MODS_MODIFICATION_TIME=$(stat -c %Y "$HOME/.minecraft/mods")
+    MODS_MODIFICATION_TIME=$(stat -c %Y "$ModsPath")
 
     if [ "$MODS_MODIFICATION_TIME" -gt "$MINECRAFT_START_TIME" ]; then
         echo "The mods folder was modified after the Minecraft game was launched." >> output/results.txt
         echo "Ban the user." >> output/results.txt
+        echo -e "${RED}The mods folder was modified after the Minecraft game was launched."
+        echo -e "Ban the user.${NC}"
         exit 1
     else
         echo "The mods folder was not modified after the Minecraft game was launched." >> output/results.txt
