@@ -39,7 +39,7 @@ while [[ $# -gt 0 ]]; do
             shift
             shift
             ;;
-        -u|--sudo-user) # New argument to specify SUDO_USER
+        -u|--sudo-user) 
             SUDO_USER="$2"
             shift
             shift
@@ -75,7 +75,6 @@ echo -e "$AsciiArt"
 echo -e "$Info"
 mkdir output
 
-# Function to find Minecraft directory
 findMinecraftDirectory() {
     local MinecraftPath=$(ls -l /proc/$(pgrep java)/fd 2>/dev/null | grep -o '/.*\.minecraft' | head -n 1)
     [[ -z $MinecraftPath ]] && { echo "ERROR: Minecraft directory not found."; exit 1; }
@@ -99,9 +98,6 @@ getProcessStartTime() {
 }
 
 runScripts() {
-    # Count total number of checks
-    total_checks=16  # Update this if you add or remove checks
-
     # Send shit to Discord
     if [ "$DESTINATION" == "discord" ]; then
         if [ -n "$WEBHOOK_URL" ]; then
@@ -226,3 +222,4 @@ else
 fi
 
 rm -rf output/*
+clear
