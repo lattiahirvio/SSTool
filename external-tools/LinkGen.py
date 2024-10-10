@@ -1,4 +1,4 @@
-
+#!/bin/python
 import requests
 import os
 

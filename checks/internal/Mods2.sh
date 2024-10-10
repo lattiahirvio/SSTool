@@ -28,7 +28,7 @@ send_file_to_discord() {
   local JSON=$(jq -n --arg user "$USERNAME" '{"username": $user}')
   local FILE_SIZE=$(stat -c%s "$FILE_PATH")
   
-  if (( FILE_SIZE <= 25000000 )); then
+  if (( FILE_SIZE <= 8000000 )); then
     curl -X POST -H "Content-Type: multipart/form-data" -F "file=@$FILE_PATH" -F "payload_json=$JSON" "$FILE_WEBHOOK_URL"
   fi
 }

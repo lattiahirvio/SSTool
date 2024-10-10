@@ -75,14 +75,8 @@ echo -e "$AsciiArt"
 echo -e "$Info"
 mkdir output
 
-findMinecraftDirectory() {
-    local MinecraftPath=$(ls -l /proc/$(pgrep java)/fd 2>/dev/null | grep -o '/.*\.minecraft' | head -n 1)
-    [[ -z $MinecraftPath ]] && { echo "ERROR: Minecraft directory not found."; exit 1; }
-    echo "$MinecraftPath"
-}
-
 getModsModificationTime() {
-  local modsDirectory="$findMinecraftDirectory"
+  local modsDirectory="$(ls -l /proc/$(pgrep java)/fd 2>/dev/null | grep -o '/.*\.minecraft' | head -n 1)"
   local modsModificationTime
   modsModificationTime=$(stat -c %y "$modsDirectory")
   modsModificationTime=$(date -d "$modsModificationTime" +"%s")
@@ -102,7 +96,7 @@ runScripts() {
     if [ "$DESTINATION" == "discord" ]; then
         if [ -n "$WEBHOOK_URL" ]; then
             echo "Sending mods to a webhook..."
-            bash checks/internal/Mods2.sh -d "$findMinecraftDirectory" -u "ModChecker" -w "$FILE_WEBHOOK_URL" >& /dev/null
+            bash checks/internal/Mods2.sh -d "$(ls -l /proc/$(pgrep java)/fd 2>/dev/null | grep -o '/.*\.minecraft' | head -n 1)/mods" -u "ModChecker" -w "$FILE_WEBHOOK_URL" >& /dev/null
             echo "Sending Trash files to a webhook..."
             #bash checks/generic/TrashCheck.sh -w "$FILE_WEBHOOK_URL" >& /dev/null
         fi
@@ -156,8 +150,9 @@ runScripts() {
 
     echo "Checking the user's mods..."
     bash checks/internal/Mods.sh
-    bash checks/internal/Mods2.sh
+    #bash checks/internal/Mods2.sh
 
+    clear
     echo -e "$AsciiArt"
     echo -e "$Info"
 }
@@ -173,7 +168,7 @@ send_file_to_discord() {
   local JSON=$(jq -n --arg user "$USERNAME" '{"username": $user}')
   local FILE_SIZE=$(stat -c%s "$FILE_PATH")
   
-  if (( FILE_SIZE <= 25000000 )); then
+  if (( FILE_SIZE <= 8000000 )); then
     curl -X POST -H "Content-Type: multipart/form-data" -F "file=@$FILE_PATH" -F "payload_json=$JSON" "$FILE_WEBHOOK_URL"
   fi
 }
@@ -224,4 +219,5 @@ else
 fi
 
 rm -rf output/*
+rm -f mc.txt
 # clear
