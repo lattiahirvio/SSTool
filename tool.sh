@@ -136,6 +136,9 @@ runScripts() {
     echo "Running Injection checks"
     bash checks/generic/InjCheck.sh
 
+    echo "Running Wraith check"
+    bash checks/internal/WraithDetection.sh
+
     echo "Running Java Agent checks"
     bash checks/generic/JavaAgentCheck.sh
 
