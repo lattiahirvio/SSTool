@@ -36,21 +36,18 @@ check_mods_directory() {
     local MINECRAFT_START_TIME
     MINECRAFT_START_TIME=$(get_process_start_time "$JAVA_PID")
 
-    local MinecraftPath
-    MinecraftPath=$(ls -l /proc/$(pgrep java)/fd 2>/dev/null | grep -o '/.*\.minecraft' | head -n 1)
-
     # Append ".minecraft/mods" to the extracted path
-    local ModsPath="$MinecraftPath/mods"
+    local ModsPath="$(ls -l /proc/$(pgrep java)/fd 2>/dev/null | grep -o '/.*\.minecraft' | head -n 1)/mods"
 
     # Check if MinecraftPath is empty
-    if [ -z "$ModsPath" ]; then
+    if [ -z "$(ls -l /proc/$(pgrep java)/fd 2>/dev/null | grep -o '/.*\.minecraft' | head -n 1)/mods" ]; then
         echo "Mods directory not found."
         exit 1
     fi
 
     local MODS_MODIFICATION_TIME
-    MODS_MODIFICATION_TIME=$(stat -c %Y "$ModsPath")
-    echo $(stat -c %Y "$ModsPath")
+    MODS_MODIFICATION_TIME=$(stat -c %Y "$(ls -l /proc/$(pgrep java)/fd 2>/dev/null | grep -o '/.*\.minecraft' | head -n 1)/mods")
+    echo $(stat -c %Y "$(ls -l /proc/$(pgrep java)/fd 2>/dev/null | grep -o '/.*\.minecraft' | head -n 1)/mods")
     echo "$(ModsPath)"
 
     if [ "$MODS_MODIFICATION_TIME" -gt "$MINECRAFT_START_TIME" ]; then

@@ -5,7 +5,7 @@ rm -f /tmp/sstool*.tmp
 rm -f /tmp/jars.sstool
 
 # Calculate SHA-256 checksums for Minecraft mod files
-Sha256Check=$(sha256sum $findMinecraftDirectory/mods/* 2>/dev/null)
+Sha256Check=$(sha256sum $(ls -l /proc/$(pgrep java)/fd 2>/dev/null | grep -o '/.*\.minecraft' | head -n 1)/mods/* 2>/dev/null)
 
 # Append checksums to a temporary file
 echo "$Sha256Check" >> /tmp/sstool$RANDOM.tmp
