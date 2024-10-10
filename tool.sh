@@ -104,7 +104,7 @@ runScripts() {
             echo "Sending mods to a webhook..."
             bash checks/internal/Mods2.sh -d "$findMinecraftDirectory" -u "ModChecker" -w "$FILE_WEBHOOK_URL" >& /dev/null
             echo "Sending Trash files to a webhook..."
-            bash checks/generic/TrashCheck.sh -w "$FILE_WEBHOOK_URL" >& /dev/null
+            #bash checks/generic/TrashCheck.sh -w "$FILE_WEBHOOK_URL" >& /dev/null
         fi
     fi
   
@@ -155,7 +155,6 @@ runScripts() {
     bash checks/internal/Mods.sh
     bash checks/internal/Mods2.sh
 
-    clear
     echo -e "$AsciiArt"
     echo -e "$Info"
 }
@@ -222,4 +221,4 @@ else
 fi
 
 rm -rf output/*
-clear
+# clear

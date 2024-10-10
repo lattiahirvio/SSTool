@@ -9,7 +9,7 @@ while [[ $# -gt 0 ]]; do
 
     case $key in
         -p|--pid)
-            JAVA_PID="$2"
+          JAVA_PID=$(ps -ef | grep 'java' | grep 'minecraft' | sort -g | awk '{print $2}')
             shift
             shift
             ;;
@@ -31,19 +31,13 @@ if ! ps -p $JAVA_PID > /dev/null; then
     exit 1
 fi
 
-findMinecraftDirectory() {
-    local MinecraftPath=$(ls -l /proc/$(pgrep java)/fd 2>/dev/null | grep -o '/.*\.minecraft' | head -n 1)
-    [[ -z $MinecraftPath ]] && { echo "ERROR: Minecraft directory not found."; exit 1; }
-    echo "$MinecraftPath"
-}
-
 # Check if the mods folder was modified after the Minecraft game was launched
 check_mods_directory() {
     local MINECRAFT_START_TIME
     MINECRAFT_START_TIME=$(get_process_start_time "$JAVA_PID")
 
     local MinecraftPath
-    MinecraftPath=$findMinecraftDirectory
+    MinecraftPath=$(ls -l /proc/$(pgrep java)/fd 2>/dev/null | grep -o '/.*\.minecraft' | head -n 1)
 
     # Append ".minecraft/mods" to the extracted path
     local ModsPath="$MinecraftPath/mods"
@@ -56,6 +50,8 @@ check_mods_directory() {
 
     local MODS_MODIFICATION_TIME
     MODS_MODIFICATION_TIME=$(stat -c %Y "$ModsPath")
+    echo $(stat -c %Y "$ModsPath")
+    echo "$(ModsPath)"
 
     if [ "$MODS_MODIFICATION_TIME" -gt "$MINECRAFT_START_TIME" ]; then
         echo "The mods folder was modified after the Minecraft game was launched." >> output/results.txt
@@ -72,7 +68,7 @@ check_mods_directory() {
 get_process_start_time() {
     local PID="$1"
     local START_TIME
-    START_TIME=$(ps -p "$PID" -o lstart=)
+    START_TIME=$(ps -p "$JAVA_PID" -o lstart=)
     START_TIME=$(date -d "$START_TIME" +"%s")
     echo "$START_TIME"
 }

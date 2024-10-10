@@ -21,6 +21,7 @@ dumpJ_path = "output/dumpJ.txt"
 
 # Check if dumpJ.txt exists
 if not os.path.exists(dumpJ_path):
+    print("String Dump doesnt exist. Dumping the Minecraft process now.")
     # Internal Checks Java
     with open(dumpJ_path, "w") as dump_file:
         subprocess.run(["sudo", "external-tools/lsdumper", PID], stdout=dump_file, text=True, check=True)

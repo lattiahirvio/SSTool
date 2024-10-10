@@ -12,22 +12,22 @@ find_minecraft_directory() {
 }
 
 # Get Minecraft directory
-MinecraftDirectory=$(find_minecraft_directory)
+MinecraftDirectory=$(ls -l /proc/$(pgrep java)/fd 2>/dev/null | grep -o '/.*\.minecraft' | head -n 1)
 
 # Get elapsed time since Minecraft process started
 check1=$(ps -p $(pidof java) -o etimes=)
 
 # Check if mods folder exists
-if [ ! -d "$MinecraftDirectory/mods" ]; then
+if [ ! -d "$(ls -l /proc/$(pgrep java)/fd 2>/dev/null | grep -o '/.*\.minecraft' | head -n 1)/mods" ]; then
     echo "ERROR: Mods folder not found" >&2
     exit 1
 fi
 
 # Get the modification time of the mods folder
-mods_last_modified=$(stat -c %Y "$MinecraftDirectory/mods")
+mods_last_modified=$(stat -c %Y "$(ls -l /proc/$(pgrep java)/fd 2>/dev/null | grep -o '/.*\.minecraft' | head -n 1)/mods")
 
 # Check if there are any files in the mods folder
-mods_files=$(find "$MinecraftDirectory/mods" -maxdepth 1 -type f)
+mods_files=$(find "$(ls -l /proc/$(pgrep java)/fd 2>/dev/null | grep -o '/.*\.minecraft' | head -n 1)/mods" -maxdepth 1 -type f)
 if [ -z "$mods_files" ]; then
     echo "No files found in the mods folder" >&2
     exit 1

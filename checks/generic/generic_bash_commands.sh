@@ -42,17 +42,12 @@ send_command_output() {
   } >> "$OUTPUT_FILE" 2>&1
 }
 
-findMinecraftDirectory() {
-    local MinecraftPath=$(ls -l /proc/$(pgrep java)/fd 2>/dev/null | grep -o '/.*\.minecraft' | head -n 1)
-    [[ -z $MinecraftPath ]] && { echo "ERROR: Minecraft directory not found."; exit 1; }
-    echo "$MinecraftPath"
-}
 
 echo "Running commands..." >> output/results.txt
 
 # Run the commands and send the results to the output file
 send_command_output "ps -p $JAVA_PID -o lstart,etime,cmd"
-send_command_output "stat $findMinecraftDirectory/mods"
+send_command_output "stat $(ls -l /proc/$(pgrep java)/fd 2>/dev/null | grep -o '/.*\.minecraft' | head -n 1)/mods"
 send_command_output "who -H"
 send_command_output "cat /etc/os-release"
 send_command_output "history 100"
@@ -61,12 +56,12 @@ send_command_output "journalctl -q | grep disconnect | grep usb"
 send_command_output "cat /etc/hosts"
 send_command_output "nmcli con show --active | grep -i vpn"
 send_command_output "nordvpn status"
-send_command_output "cat /home/$SUDO_USER/.minecraft/usercache.json | jq '.[] | {name}'"
+send_command_output "cat $(ls -l /proc/$(pgrep java)/fd 2>/dev/null | grep -o '/.*\.minecraft' | head -n 1)/usercache.json | jq '.[] | {name}'"
 send_command_output "echo $XDG_CURRENT_DESKTOP"
 send_command_output "sudo -E less /var/log/syslog"
 send_command_output "lsblk"
 send_command_output "ls /tmp/"
-send_command_output ". -mtime -1 -type f"
+send_command_output "find . -mtime -1 -type f"
 send_command_output "ps -p $JAVA_PID -o args"
 send_command_output "sudo lsof -i"
 

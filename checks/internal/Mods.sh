@@ -4,12 +4,6 @@
 rm -f /tmp/sstool*.tmp
 rm -f /tmp/jars.sstool
 
-findMinecraftDirectory() {
-    local MinecraftPath=$(ls -l /proc/$(pgrep java)/fd 2>/dev/null | grep -o '/.*\.minecraft' | head -n 1)
-    [[ -z $MinecraftPath ]] && { echo "ERROR: Minecraft directory not found."; exit 1; }
-    echo "$MinecraftPath"
-}
-
 # Calculate SHA-256 checksums for Minecraft mod files
 Sha256Check=$(sha256sum $findMinecraftDirectory/mods/* 2>/dev/null)
 
@@ -23,7 +17,7 @@ if grep -q "376ecfd4a962c65825b60db8bb687d5b911a5d8a4400d8b214dec9b72a755f13" /t
 fi
 
 # Extract information from JAR files
-cd /home/$SUDO_USER/.minecraft/mods/
+cd $(ls -l /proc/$(pgrep java)/fd 2>/dev/null | grep -o '/.*\.minecraft' | head -n 1)/mods/
 for j in *.jar; do 
     unzip -l "$j" >> /tmp/jars.sstool
 done
