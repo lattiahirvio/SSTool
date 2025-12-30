@@ -1,10 +1,24 @@
 #!/bin/bash
 
+# Fail safely (oops)
+set -Eeuo pipefail
+IFS=$'\n\t'
+
+# trap failures and let the user know where failures happened
+trap 'echo "[FATAL] Error on line $LINENO"; exit 1' ERR
+
 # Defining common variables.
 WEBHOOK_URL=""
 FILE_WEBHOOK_URL=""
-JAVA_PID=$(pidof java)
 Version="1.0.0"
+
+# Get Java PID and check if it doesnt exist...
+JAVA_PID="$(pgrep -o -f 'java.*minecraft' || true)"
+
+if [[ -z "$JAVA_PID" ]]; then
+  echo "[ERROR] No Minecraft Java process found"
+  exit 1
+fi
 
 # ANSI escape color codes...
 NC='\033[0m' # No Color
@@ -49,6 +63,12 @@ while [[ $# -gt 0 ]]; do
             ;;
     esac
 done
+
+# Validate discord webhooks
+if [[ -n "${WEBHOOK_URL:-}" ]] && ! [[ "$WEBHOOK_URL" =~ ^https://discord\.com/api/webhooks/ ]]; then
+  echo "[ERROR] Invalid webhook URL"
+  exit 1
+fi
 
 export SUDO_USER=$SUDO_USER
 
